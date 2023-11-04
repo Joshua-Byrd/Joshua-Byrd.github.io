@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+
+<body>
+    <header id="projects-header">
+        <!--Header will contain logo, page title, and main navigation-->
+        <h1>Projects</h1>
+        <hr>
+        <nav class="header-navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main id="projects-main">
+        <article class="project">
+            <header>
+                <h2>
+                    <img src="./images/postgresql600x340.jpg" alt="The PostgreSQL logo." width="100">
+                
+                    <a href="https://github.com/Joshua-Byrd/CS669_term_project">Database for a Fitness/Nutrition App</a>
+                </h2>
+            </header>
+            <p>
+                This PostgreSQL database was my term project for CS669 at Boston University. I built it with the idea of it being used for a fictional fitness and nutrition tracking app. With this database, an app could store data aboutusers' workouts, food eaten, and so on, and query for statistics for both. Included in
+                the script are queries to populate all tables, stored procedures to apply transactions like creating a new template entry and associating a template with a users, triggers for updating a users' personal bests and logging a
+                password change by a user. I've also included some sample queries for common user actions, such as:
+            </p>
+            <pre>
+                <code>
+                    SELECT
+                        meal,
+                        ROUND(AVG(meal_calories)) as average_calories,
+                        ROUND(AVG(meal_protein)) as average_protein,
+                        ROUND(AVG(meal_fat)) as average_fat,
+                        ROUND(AVG(meal_carbohydrates)) as average_carbohydrates
+                    FROM
+                        (SELECT date, meal,
+                        SUM(number_of_servings * calories) AS meal_calories,
+                        SUM(number_of_servings * protein) AS meal_protein,
+                        SUM(number_of_servings * fat) AS meal_fat,
+                        SUM(number_of_servings * carbohydrate) AS meal_carbohydrates
+                        FROM Nutrition
+                    JOIN Food ON Food.food_ID = Nutrition.food_ID
+                    WHERE user_ID = 2 AND date BETWEEN '2023-10-01' AND '2023-10-07'
+                    GROUP BY date, meal
+                    ORDER BY date) as result
+                    GROUP BY meal;
+                </code>
+            </pre>
+            which gives us the following the average macronutrient breakdown for a week of eating for a given user:
+            <table>
+                <tr>
+                    <th>meal</th>
+                    <th>average_calories</th>
+                    <th>average_protein</th>
+                    <th>average_fat</th>
+                    <th>average_carbohydrates</th>
+                </tr>
+                <tr>
+                    <td>breakfast</td>
+                    <td>908</td>
+                    <td>101</td>
+                    <td>13</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>morning snack</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>14</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>lunch</td>
+                    <td>364</td>
+                    <td>46</td>
+                    <td>8</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>afternoon snack</td>
+                    <td>55</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>dinner</td>
+                    <td>790</td>
+                    <td>25</td>
+                    <td>43</td>
+                    <td>77</td>
+                </tr>
+            </table>
+        </article>
+        <footer><hr></footer>
+        <article class="project">
+            <header>
+                <h2>
+                    <img src="./images/java-logo.webp" alt="The logo for the Java programming language" width="100">
+                
+                    <a href="https://github.com/Joshua-Byrd/GroupProject">Data Analysis Project in Java</a>
+                </h2>
+            </header>
+            <p>
+                This was a group project, completed with another student, as the final project of CIT594 at The University of Pennsylvania, It utilizes a rudimentary MVC pattern where the model accepts either a JSON or CSV file of tabular data and parses it into various data structures, while the view provides the user with a CLI
+                menu consisting of multiple data analysis functions. The controller of course acts as the go-between for the model and view, but also provides validation for incoming files before passing them to the model.
+            </p>
+            <p>
+                Additionally, we implemented a logger using the singleton pattern, which logs all user interactions with the program, and
+                built a finite state machine to parse incoming csv files (JSON files were parsed with Java's existing JSON
+                library).
+            </p>
+            <footer><hr></footer>
+        </article>
+        <article class="project">
+            <header>
+                <h2>
+                    <img src="./images/python-logo.png"
+                    alt="The logo for the Python programming language" width="100">
+                
+                    <a href="https://github.com/Joshua-Byrd/Exit_Surveys_Analysis/blob/master/Exit_Surveys_Analysis.ipynb">Data
+                        Analysis using Python and Jupyter Notebook</a>
+                </h2>
+            </header>
+            <p>
+                In this project, I analyzed two datasets using Python and Pandas in Jupyter Notebook. Both datasets consisted of employee exit surveys and were obtained from the Department of Education, Training, and
+                Employment; and from the Technical and Further Education Institute, both in Queensland, Autralia. Each contained various data points about employees such as employee id and start and end dates, as well as information about why employees left their positions
+            </p>
+            <p>
+                The project consisted of cleaning the data to deal with null values and odd entries, as well as getting both  sets into workable shape. Then basic analysis to determine why employees left their positions, if it differed between short- and long-term employees, and how much of a role job dissatisfaction played in their
+                leaving.
+            </p>
+            <footer><hr></footer>
+        </article>
+    </main>
+    <footer>&copy; 2023 Joshua Byrd</footer>
+</body>
+
+</html>
