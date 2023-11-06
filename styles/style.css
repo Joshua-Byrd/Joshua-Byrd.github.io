@@ -1,0 +1,103 @@
+/* 
+Color Palette
+background color: #201E1A
+text color: #888783
+highlight color: #877046
+bright highlight color: #FDD06B*/
+
+/* General Styles-----------------------------------------------------------*/
+
+body {
+    background-image: url(../images/keyboard.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+* {
+    color :#B3B2AE;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+.page {
+    width: 90%;
+    margin-left: auto;
+    margin-right:auto;
+    vertical-align: middle;
+    background-color: rgb(32, 30, 26, 0.90);
+    border: 1px solid #B3B2AE;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+H1 {
+    color:#FDD06B;
+    text-align: right;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+} 
+
+.header-navbar ul {
+    padding-left: 0px;
+    margin-top: 2px;
+    font-size: .90em;
+}
+
+.header-navbar li {
+    display: inline;
+    list-style: none;
+}
+
+.header-navbar a {
+    color:#877046;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* About page-----------------------------------------------------------------*/
+
+#about-picture-aside {
+    float:right;
+}
+
+#about-picture {
+    border-radius: 50%;
+}
+
+#schweitzer-quote blockquote b, i{
+    color:#FDD06B;
+}
+
+pre code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    width:70%;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: rgb(0,0,0,95%);
+}
+
+/* Blog page----------------------------------------------------------------- */
+
+.code-screenshots {
+    border-radius: 12.5px;
+}
