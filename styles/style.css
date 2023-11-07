@@ -1,4 +1,13 @@
-/* 
+
+/*
+Breakpoints
+< 576px: phone, portrait mode
+576 - 767px: phone, landscape
+768 - 991px: tablets
+992 - 1199: PC/laptop monitor
+> 1200: extra large monitor
+
+
 Color Palette
 background color: #201E1A
 text color: #888783
@@ -21,7 +30,7 @@ body {
 }
 
 .page {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right:auto;
     vertical-align: middle;
@@ -34,8 +43,10 @@ body {
 H1 {
     color:#FDD06B;
     text-align: right;
+    font-size: 5em;
 }
 
+/* Navbar and links */
 a:link {
     text-decoration: none;
 }
@@ -52,24 +63,61 @@ a:active {
     text-decoration: none;
 } 
 
+
 .header-navbar ul {
     padding-left: 0px;
     margin-top: 2px;
     font-size: .90em;
+    display:flex;
+    max-width: 50%;
+    justify-content: space-around;
 }
 
 .header-navbar li {
     display: inline;
     list-style: none;
+    color:#877046;
 }
 
 .header-navbar a {
     color:#877046;
 }
-
 figcaption {
     text-align: center;
 }
+
+/* media queries */
+@media(max-width:992px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    table {
+        width: 70%;
+    }
+}
+
+@media(max-width:576px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .header-navbar ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li.spacer {
+        display:none;
+    }
+}
+
 
 /* About page-----------------------------------------------------------------*/
 
@@ -101,3 +149,8 @@ pre {
 .code-screenshots {
     border-radius: 12.5px;
 }
+
+
+/* Projects page------------------------------------------------------------- */
+
+/* Contact page-------------------------------------------------------------- */
