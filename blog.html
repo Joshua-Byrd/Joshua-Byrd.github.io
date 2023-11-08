@@ -30,12 +30,75 @@
         <!--Each article is a blog post-->
         <article class="blog-post">
           <header>
+            <h2>11/08/23 - CSS Transform</h2>
+          </header>
+          <p>
+            The CSS <em>transform</em> property allows us to manipulate an HTML
+            element in a variety of ways. Specifically, we can rotate, skew,
+            move, and scale elements. The full spectrum of transforms is a bit
+            beyond this short post, so lets begin with rotations and move on
+            from there.
+          </p>
+          <p>
+            To demonstrate, we'll start with a simple div:
+
+            <div class="blog-example-11-08-23" id="normal-div">
+              EXAMPLE
+            </div>
+          </p>
+
+          <p>
+            Which we can create by first making a div and styling it like so:
+          </p>
+
+          <img class="code-screenshots" src="./images/blog-post-11-08-23-01.png"
+            alt="A screenshot of the CSS to style the div.">
+          <p>
+            Now, what if, for whatever reason, we wanted to flip that div over?
+            Enter CSS transform and the <em>rotate</em> value:
+          </p>
+
+          <img class="code-screenshots"
+            src="./images/blog-post-11-08-23-rotated.png">
+          <p>
+            And, <em>voila!</em> We now have a div standing on its head:
+          </p>
+
+          <div class="blog-example-11-08-23" id="rotated-div"
+            alt="A screenshot of the code to rotate a div.">
+            EXAMPLE
+          </div>
+          <p>
+            But that's just the beginning. What if we wanted the element to spin
+            around, and we wanted it to happen when we mouse over it?
+            All we need to do is give it a degree argument greater than 360 (a
+            full rotation) with the <i>hover</i> pseudo-class. We'll give a
+            transition to make it look nicer as well:
+          </p>
+          <img class="code-screenshots"
+            src="./images/blog-post-11-08-23-spinning.png"
+            alt="a screenshot of the code to create a spinning div.">
+          <p>
+            Now trying hovering your mouse over the div to see how it responds.
+          </p>
+          <div class="blog-example-11-08-23" id="spinning-div">
+            EXAMPLE
+          </div>
+
+          <footer>
+            <i>-Josh</i>
+            <hr>
+          </footer>
+        </article>
+
+        <article class="blog-post">
+          <header>
             <h2>11/04/23 - Tables</h2>
           </header>
           <p>
             To display tabular data, such as you might find in an excel
-            spreadsheet or Pandas dataframe, in HTML, we use (shockingly) a
-            table.
+            spreadsheet or Pandas dataframe, in HTML, we (shockingly) use a
+            <em>table</em>.
           </p>
           <p>
             Enclosed within the &lt;table&gt; tag, we define headers with the
@@ -59,7 +122,7 @@
               <th>Change</th>
               <th>PCT Change</th>
             </tr>
-            <tr>
+            <tr class="odd">
               <td>DOW</td>
               <td>12,189.14</td>
               <td>-152.69</td>
@@ -71,7 +134,7 @@
               <td>-13.93</td>
               <td>-1.06%</td>
             </tr>
-            <tr>
+            <tr class="odd">
               <td>NASDAQ</td>
               <td>2,731.64</td>
               <td>-33.01</td>
@@ -204,7 +267,7 @@
             approach, though.
           </p>
           <p>Time to get to work!</p>
-          <img src="./images/kermit.gif" width="200"
+          <img id="blog-kermit-gif" src="./images/kermit.gif" width="200"
             alt="A gif of Kermit the frog typing frantically.">
 
           <footer>

@@ -1,4 +1,3 @@
-
 /*
 Breakpoints
 < 576px: phone, portrait mode
@@ -9,10 +8,10 @@ Breakpoints
 
 
 Color Palette
-background color: #201E1A
+background color: #201e1a
 text color: #888783
 highlight color: #877046
-bright highlight color: #FDD06B*/
+bright highlight color: #fdd06b*/
 
 /* General Styles-----------------------------------------------------------*/
 
@@ -24,24 +23,23 @@ body {
 }
 
 * {
-    color :#B3B2AE;
-    font-family:Arial, Helvetica, sans-serif
-
+    color: #b3b2ae;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .page {
     width: 95%;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     vertical-align: middle;
     background-color: rgb(32, 30, 26, 0.90);
-    border: 1px solid #B3B2AE;
+    border: 1px solid #b3b2ae;
     border-radius: 5px;
     padding: 15px;
 }
 
 H1 {
-    color:#FDD06B;
+    color: #fdd06b;
     text-align: right;
     font-size: 5em;
 }
@@ -65,14 +63,14 @@ a:hover {
 
 a:active {
     text-decoration: none;
-} 
+}
 
 
 .header-navbar ul {
     padding-left: 0px;
     margin-top: 2px;
     font-size: .90em;
-    display:flex;
+    display: flex;
     max-width: 50%;
     justify-content: space-around;
 }
@@ -80,15 +78,16 @@ a:active {
 .header-navbar li {
     display: inline;
     list-style: none;
-    color:#877046;
+    color: #877046;
 }
 
 .header-navbar a {
-    color:#877046;
+    color: #877046;
     transition-duration: .75s;
 }
 
-.header-navbar a:hover, a:active {
+.header-navbar a:hover,
+a:active {
     opacity: .50;
     letter-spacing: .2em;
     transition-duration: .2s;
@@ -133,12 +132,13 @@ a:active {
     }
 
     li.spacer {
-        display:none;
+        display: none;
     }
 
     th {
         font-size: .75em;
     }
+
     td {
         font-size: .75em;
     }
@@ -148,11 +148,52 @@ a:active {
     }
 }
 
+/* Media query for print version--------------------------------------------- */
+
+@media print {
+    * {
+        background: white;
+        color: black;
+    }
+
+    .main {
+        border: 1px solid white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h5 {
+        color: black;
+    }
+
+    #about-picture-aside {
+        display: none;
+    }
+
+    #blog-kermit-gif {
+        display: none;
+    }
+
+
+
+}
+
 
 /* About page-----------------------------------------------------------------*/
 
 #about-picture-aside {
-    float:right;
+    float: right;
     max-width: 90%;
 }
 
@@ -161,18 +202,62 @@ a:active {
     max-width: 100%;
 }
 
-#schweitzer-quote blockquote b, i{
-    color:#FDD06B;
+#schweitzer-quote blockquote b,
+i {
+    color: #fdd06b;
 }
 
 /* Blog page----------------------------------------------------------------- */
 
+
 img.code-screenshots {
-    border-radius: 12.5px;
-    max-width:90%;
+    border-radius: 5px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-example-11-08-23 {
+    height: 50px;
+    width: 150px;
+    border: 1px solid white;
+    background-color: #fdd06b;
+    color: black;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+}
+
+#rotated-div {
+    transform: rotate(180deg);
+}
+
+#spinning-div {
+    transition: 1s;
+}
+
+#spinning-div:hover {
+    transform: rotate(720deg);
 }
 
 
+
 /* Projects page------------------------------------------------------------- */
+
+th {
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 1px solid #b3b2ae;
+}
+
+tr {
+    text-align: center;
+}
+
+tr.odd {
+    background-color: rgb(83, 83, 83);
+
+}
 
 /* Contact page-------------------------------------------------------------- */
