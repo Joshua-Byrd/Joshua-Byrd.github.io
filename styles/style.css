@@ -24,7 +24,7 @@ body {
 
 * {
     color: #b3b2ae;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .page {
@@ -36,16 +36,29 @@ body {
     border: 1px solid #b3b2ae;
     border-radius: 5px;
     padding: 15px;
+    max-width: 960px;
+    box-shadow: 0px 0px 5px;
 }
 
-H1 {
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
     color: #fdd06b;
     text-align: right;
     font-size: 5em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-H2 {
+h2 {
     font-size: 2.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 /* Navbar and links */
@@ -93,102 +106,9 @@ a:active {
     transition-duration: .2s;
 }
 
-
-/* media queries ------------------------------------------------------------*/
-@media(max-width:992px) {
-    h1 {
-        font-size: 4em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
+.page>footer {
+    margin-top: 25px;
 }
-
-@media(max-width:768px) {
-    h1 {
-        font-size: 3em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    table {
-        max-width: 90%;
-    }
-
-
-}
-
-@media(max-width:576px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    .header-navbar ul {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    li.spacer {
-        display: none;
-    }
-
-    th {
-        font-size: .75em;
-    }
-
-    td {
-        font-size: .75em;
-    }
-
-    #about-bottom-text {
-        clear: both;
-    }
-}
-
-/* Media query for print version--------------------------------------------- */
-
-@media print {
-    * {
-        background: white;
-        color: black;
-    }
-
-    .main {
-        border: 1px solid white;
-    }
-
-    nav {
-        display: none;
-    }
-
-    footer {
-        display: none;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h5 {
-        color: black;
-    }
-
-    #about-picture-aside {
-        display: none;
-    }
-
-    #blog-kermit-gif {
-        display: none;
-    }
-
-
-
-}
-
 
 /* About page-----------------------------------------------------------------*/
 
@@ -260,4 +180,125 @@ tr.odd {
 
 }
 
+.project-github-link a {
+    color: #877046;
+}
+
 /* Contact page-------------------------------------------------------------- */
+
+#contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#contact-grid form {
+    color: black;
+}
+
+#contact-grid form p {
+    margin-bottom: 0px;
+}
+
+
+#contact-aside ul {
+    list-style: none;
+}
+
+#contact-aside ul li {
+    line-height: 2em;
+}
+
+input {
+    color: black;
+}
+
+/* media queries ------------------------------------------------------------*/
+@media(max-width:992px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    table {
+        max-width: 90%;
+    }
+
+}
+
+@media(max-width:576px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .header-navbar ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li.spacer {
+        display: none;
+    }
+
+    th {
+        font-size: .75em;
+    }
+
+    td {
+        font-size: .75em;
+    }
+
+    #about-bottom-text {
+        clear: both;
+    }
+}
+
+/* Media query for print version--------------------------------------------- */
+
+@media print {
+    * {
+        background: white;
+        color: black;
+    }
+
+    .main {
+        border: 1px solid white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h5 {
+        color: black;
+    }
+
+    #about-picture-aside {
+        display: none;
+    }
+
+    #blog-kermit-gif {
+        display: none;
+    }
+}

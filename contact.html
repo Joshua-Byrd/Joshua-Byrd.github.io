@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet">
     <title>Contact</title>
   </head>
   <body>
@@ -27,12 +32,34 @@
         </h1>
       </header>
       <main>
-        <ul>
-          <li><a href="mailto:joshuabyrd@outlook.com">Email</a></li>
-          <li><a href="https://github.com/Joshua-Byrd">Github</a></li>
-          <li><a href="https://www.linkedin.com/in/joshua-byrd-356b93184">LinkedIn
-            </a></li>
-        </ul>
+        <div id="contact-grid">
+          <form action="#">
+            <h3>Leave me a Message here...</h3>
+            <p>Name </p>
+            <input type="text" name="name" maxlength="100">
+            <p>Email </p>
+            <input type="text" name="email" maxlength="100">
+            <p>What is this message about? </p>
+            <select name="about-select">
+              <option value="hire">I want to hire you.</option>
+              <option value="question">I have a question about the site.</option>
+              <option value="chat">I just want to chat.</option>
+            </select>
+            <p>Message</p>
+            <textarea name="message" cols="50" rows="5">Tell me your thoughts...</textarea>
+            <p>
+              <input type="submit" name="submit" value="Submit">
+            </p>
+          </form>
+          <aside id="contact-aside">
+            <h3>...or on social media:</h3>
+            <ul>
+              <li><a href="https://github.com/Joshua-Byrd">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/joshua-byrd-356b93184">LinkedIn
+                </a></li>
+            </ul>
+          </aside>
+        </div>
       </main>
       <footer>&copy; 2023 Joshua Byrd</footer>
     </div>
