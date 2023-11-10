@@ -197,16 +197,39 @@ tr.odd {
 
 /* Contact page-------------------------------------------------------------- */
 
-#contact-grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+#contact-aside {
+    max-width: 30%;
 }
 
-#contact-grid form {
-    color: black;
+#contact-form {
+    max-width: 66%;
 }
 
-#contact-grid form p {
+#contact-form input,
+select,
+option,
+textarea {
+    color: rgb(32, 32, 32) !important;
+    max-width: 90%;
+}
+
+#contact-form input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b3b2ae;
+    color: #201e1a !important;
+    border: none;
+    border-radius: 1px;
+
+}
+
+#contact-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#contact-container form p {
     margin-bottom: 0px;
 }
 
@@ -219,9 +242,6 @@ tr.odd {
     line-height: 2em;
 }
 
-input {
-    color: black;
-}
 
 /* media queries ------------------------------------------------------------*/
 @media(max-width:992px) {
@@ -273,6 +293,14 @@ input {
 
     #about-bottom-text {
         clear: both;
+    }
+
+    #contact-container {
+        flex-direction: column;
+    }
+
+    #contact-aside {
+        margin-top: 15px;
     }
 }
 
