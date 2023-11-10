@@ -35,17 +35,18 @@
         <!--Each article is a blog post-->
         <article class="blog-post">
           <header>
-            <h2>11/08/23 - CSS Transform</h2>
+            <h2>11/08/23 - CSS Transform: rotate</h2>
           </header>
           <p>
             The CSS <em>transform</em> property allows us to manipulate an HTML
             element in a variety of ways. Specifically, we can rotate, skew,
-            move, and scale elements. The full spectrum of transforms is a bit
-            beyond this short post, so lets begin with rotations and move on
-            from there.
+            move, and scale elements. The full spectrum of transforms is
+            extensive, so I'll address each of the transform values in
+            individual posts.
           </p>
           <p>
-            To demonstrate, we'll start with a simple div:
+            Today, we'll begin with rotations, and to demonstrate, we'll start
+            with a simple div:
           </p>
           <div class="blog-example-11-08-23" id="normal-div">
             EXAMPLE
@@ -55,7 +56,8 @@
             Which we can create by first making a div and styling it like so:
           </p>
 
-          <img class="code-screenshots" src="./images/blog-post-11-08-23-01.png"
+          <img class="code-screenshots"
+            src="./images/blog-post-11-08-23-div.png"
             alt="A screenshot of the CSS to style the div.">
           <p>
             Now, what if, for whatever reason, we wanted to flip that div over?
@@ -88,6 +90,27 @@
           <div class="blog-example-11-08-23" id="spinning-div">
             EXAMPLE
           </div>
+          <p>
+            Pretty neat! Now, take note of the fact that in both of these
+            examples, we've used positive value for the degrees of rotation,
+            which rotates the div clockwise. Using a negative number for our
+            degrees will rotate the div in the opposite direction:
+          </p>
+
+          <img class="code-screenshots"
+            src="./images/blog-post-11-08-23-ccw-rotated-div.png"
+            alt="a screenshot of the code to create a div rotated counterclockwise.">
+          <div class="blog-example-11-08-23" id="ccw-rotated-div">
+            EXAMPLE
+          </div>
+          <p>
+            There are numerous other things that can be done with rotations,
+            including rotating along the X or Y axes specifically, or specifing
+            turns rather than degrees. But this is enough to get you started. To
+            delve deeper, I suggest <a
+              href="https://css-tricks.com/almanac/properties/t/transform/">this</a>
+            article from CSS-Tricks.
+          </p>
 
           <footer>
             <i>-Josh</i>
@@ -146,12 +169,15 @@
             </tr>
           </table>
           <p>
-            A couple of things to to note here. First, table data &lt;td&gt; is
+            A couple of things to to note here. First, table data &lt;td&gt;
+            is
             nested within each table row &lt;tr&gt;, which is nested with the
             table tags. And second, our top row is defined not with table data
-            tags, but with table header tags &lt;th&gt;. Also, notice that there
+            tags, but with table header tags &lt;th&gt;. Also, notice that
+            there
             are two empty header tags. As headers are aligned with columns, we
-            need those there to make sure the change and PCT change headers are
+            need those there to make sure the change and PCT change headers
+            are
             place over the appropriate columns.
           </p>
 
@@ -167,7 +193,8 @@
           <p>
             One of the main topics covered this week is the addition of audio
             and
-            video files into web pages. As common as multimedia is on the modern
+            video files into web pages. As common as multimedia is on the
+            modern
             web, it's not as simple as adding an &lt;img&gt; tag for images.
             First, not all browsers support the same
             <a
@@ -175,7 +202,8 @@
             so it becomes necessary to provide multiple file types(e.g. having
             a video file provided in both .mp4 and .webm). Additionally, since
             some older browsers don't support HTML5, which introduces native
-            multimedia, we must also add an error message for this scenario. So,
+            multimedia, we must also add an error message for this scenario.
+            So,
             beginning with the base &lt;audio&gt; and &lt;video&gt; tags, this
             ends up looking something like this:
           </p>
@@ -197,8 +225,10 @@
           </video>
 
           <p>
-            Note also the attribute used: <em>controls</em> tells the browser to
-            render the controls for the file. Control buttons are not displayed
+            Note also the attribute used: <em>controls</em> tells the browser
+            to
+            render the controls for the file. Control buttons are not
+            displayed
             by
             default, so this attribute is necessary for the user to be able to
             play or stop the playback. Other attributes include:
@@ -214,7 +244,8 @@
               following values:
               <ul>
                 <li>
-                  none - browser should not load the file until the user presses
+                  none - browser should not load the file until the user
+                  presses
                   play
                 </li>
                 <li>auto - browser downloads the video when the page loads</li>
@@ -225,7 +256,8 @@
               </ul>
             </li>
             <li>
-              width and height - determines the size that a video is rendered in
+              width and height - determines the size that a video is rendered
+              in
               the browser.
             </li>
           </ul>
@@ -258,11 +290,13 @@
           </p>
           <p>
             Now, taking a front-end web development course, we are tasked with
-            creating a portfolio site as a term project, which seems to me to be
+            creating a portfolio site as a term project, which seems to me to
+            be
             the perfect impetus to actually get it together and do this thing.
             So,
             I'm setting the following goal:
-            <i>With each assignment (each iteration of the project), I will add
+            <i>With each assignment (each iteration of the project), I will
+              add
               at
               least one blog post highlighting something that I've learned
               within

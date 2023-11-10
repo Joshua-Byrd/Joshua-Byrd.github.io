@@ -9,15 +9,13 @@ Breakpoints
 
 Color Palette
 background color: #201e1a
-text color: #888783
+main text color: #888783
 highlight color: #877046
 bright highlight color: #fdd06b
 
 Fonts from Google
 Josephine Sans
 Bebas Nueue
-
-
 */
 
 
@@ -74,6 +72,7 @@ h3 {
 /* Navbar and links */
 a:link {
     text-decoration: none;
+    transition: .2s;
 }
 
 a:visited {
@@ -82,6 +81,8 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+    text-shadow: 0px 0px 3px;
+    transition: .2s;
 }
 
 a:active {
@@ -114,6 +115,7 @@ a:active {
     opacity: .50;
     letter-spacing: .2em;
     transition-duration: .2s;
+    text-shadow: none;
 }
 
 .page>footer {
@@ -148,15 +150,12 @@ img.code-screenshots {
 }
 
 .blog-example-11-08-23 {
-    height: 50px;
-    width: 150px;
-    border: 1px solid white;
+    width: 100px;
     background-color: #fdd06b;
     color: black;
     margin: auto;
     text-align: center;
-    vertical-align: middle;
-    padding-top: 30px;
+    padding: 20px;
 }
 
 #rotated-div {
@@ -169,6 +168,11 @@ img.code-screenshots {
 
 #spinning-div:hover {
     transform: rotate(720deg);
+}
+
+#ccw-rotated-div {
+    transform: rotate(-25deg);
+    margin-bottom: 40px;
 }
 
 
@@ -193,6 +197,11 @@ tr.odd {
 .project-github-link a {
     font-family: 'Josefin Sans', sans-serif;
     color: #877046;
+}
+
+#group-project-screenshot {
+    width: 200px;
+    position: relative;
 }
 
 /* Contact page-------------------------------------------------------------- */
