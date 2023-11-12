@@ -4,10 +4,12 @@ For this assignment, I have styled nearly every element on every page using CSS.
 
 ## Above and Beyond
 In addition to the base requirements, I have added the following features:
-1. a navbar that is responsive and reactive using flexbox. On hover, menu links change for both visual appeal and feedback to the user (this is actually true of all links, but standard links are styled differently).  Additionally, the navbar collapses to become columnar as the screen approaches mobile size. 
+1. a navbar that is responsive and reactive using flexbox. On hover, menu links change for both visual appeal and feedback to the user (this is true of all links, but standard links are styled differently).  Additionally, the navbar collapses to become columnar as the screen approaches mobile size. 
 2. a gallery page that utilizes flexbox to create a responsive, attractive gallery of images. Additionally, using transform and transitions, the images resize on hover.
 3. a proper contact page containing a working contact form using Formspree. It is also responsive, using flexbox to collapse the two columns into a single column.  
-4. a new blog post, about the transform: rotate property.
+4. a basic version of the site for printing using a media query
+5. a new blog post, about the transform: rotate property.
+6. the site has now been published to Github pages and can be found at https://joshua-byrd.github.io/
 
 ## Plans for the final project
 For the final project, I plan to add a resume page and remove the main points section from the 'About' page. Separating these seems a better solution, and gets me to the 7-page minimum. I'd like to add more pages, but I'm not sure what yet. I also want to redesign the projects page, codensing each project and arranging them in two or three columns. 

@@ -366,11 +366,11 @@ textarea {
         color: black;
     }
 
-    #about-picture-aside {
+    #about-picture-aside,
+    #blog-kermit-gif,
+    audio,
+    video {
         display: none;
     }
 
-    #blog-kermit-gif {
-        display: none;
-    }
 }
