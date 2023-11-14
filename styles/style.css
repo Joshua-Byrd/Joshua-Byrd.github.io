@@ -134,8 +134,7 @@ a:active {
     max-width: 100%;
 }
 
-#schweitzer-quote blockquote b,
-i {
+#schweitzer-quote blockquote>b {
     color: #fdd06b;
 }
 
@@ -274,6 +273,52 @@ textarea {
 #contact-aside ul li {
     line-height: 2em;
 }
+
+/* Resume page-------------------------------------------------------------- */
+
+dt,
+#resume-container div h3 {
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 5px;
+    color: #fdd06b;
+}
+
+.resume-headings {
+    margin-bottom: 0px;
+}
+
+.resume-hr {
+    margin-top: 0px;
+}
+
+#resume-container {
+    display: flex;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#resume-container div {
+    max-width: 90%;
+    width: 30%
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-skills {
+    width: 63%;
+}
+
+.ratings {
+    width: 33%;
+}
+
 
 
 /* media queries ------------------------------------------------------------*/
