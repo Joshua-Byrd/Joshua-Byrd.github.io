@@ -283,6 +283,7 @@ dt,
     font-size: 1.2rem;
     padding-top: 5px;
     color: #fdd06b;
+    margin-bottom: 0px;
 }
 
 .resume-headings {
@@ -298,26 +299,14 @@ dt,
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #resume-container div {
     max-width: 90%;
-    width: 30%
+    width: 30%;
 }
 
-.skills-container {
-    display: flex;
-    justify-content: center;
-}
-
-.main-skills {
-    width: 63%;
-}
-
-.ratings {
-    width: 33%;
-}
 
 
 
