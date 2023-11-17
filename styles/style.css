@@ -274,6 +274,12 @@ textarea {
     line-height: 2em;
 }
 
+#contact-github-logo,
+#contact-linkedin-logo {
+    width: 25px;
+    padding-right: 10px;
+}
+
 /* Resume page-------------------------------------------------------------- */
 
 dt,
