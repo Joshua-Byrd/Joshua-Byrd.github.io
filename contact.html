@@ -19,13 +19,15 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li class="spacer">\</li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
             <li class="spacer">\</li>
             <li><a href="projects.html">Projects</a></li>
             <li class="spacer">\</li>
             <li><a href="blog.html">Blog</a></li>
             <li class="spacer">\</li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li class="spacer">\</li>
+            <li><a href="about.html">About</a></li>
             <li class="spacer">\</li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -39,10 +41,10 @@
           <form id="contact-form" action="https://formspree.io/f/myyqvojr"
             method="post">
             <h3>Leave me a Message here...</h3>
-            <p>Name </p>
-            <input type="text" name="name" maxlength="100">
-            <p>Email </p>
-            <input type="text" name="email" maxlength="100">
+            <p>Name</p>
+            <input type="text" name="name" id="name" maxlength="100">
+            <p>Email</p>
+            <input type="text" name="email" id="email" maxlength="100">
             <p>What is this message about? </p>
             <select name="about-select">
               <option value="hire">I want to hire you.</option>
@@ -50,8 +52,9 @@
               <option value="chat">I just want to chat.</option>
             </select>
             <p>Message</p>
-            <textarea id="message" name="message" cols="50" rows="5">Tell me
-              your thoughts...</textarea>
+            <textarea id="message" name="message" cols="50"
+              rows="5">Write something...</textarea>
+            <div id="warning-box"></div>
             <p>
               <input type="submit" name="submit" value="Submit">
             </p>
@@ -68,5 +71,6 @@
       </main>
       <footer>&copy; 2023 Joshua Byrd</footer>
     </div>
+    <script src="./scripts/contact.js"></script>
   </body>
 </html>
