@@ -39,6 +39,49 @@
         <!--Each article is a blog post-->
         <article class="blog-post">
           <header>
+            <h2>11/18/23 - Randomly Styling a Div with JavaScript</h2>
+          </header>
+          <p>First things first - click the tragically boring div below:</p>
+          <div id="blog-post-div-11-18-23">Click Me</div>
+          <p>Well, it's more interesting now, at least.</p>
+          <p>
+            This deserves a longer explanation, and I will get to that, but
+            between my current homework, creating this post, adding to the final
+            project (note the new resume page), and trying to cover the reading
+            for next week...I'm kind of pressed for time. For now, I'm just
+            going to add some screenshots and a brief description of each.
+          </p>
+          <p>
+            First, we give our div a base style:
+          </p>
+          <img src="./images/blog-post-11-18-23-CSS.png"
+            alt="A screenshot of the CSS to style the div">
+          <p>
+            Then, in our JavaScript file, we select the div using querySelector,
+            and, once we have it assigned to a variable, add an event listener.
+            Note that I'm using an anonymous function to call the randomization
+            functions when the div is clicked.
+          </p>
+          <img src="./images/blog-post-11-18-23-selector.png"
+            alt="A screenshot of the JavaScript code to add an event listener to the div.">
+          <p>
+            And, here are the functions that are actually returning the
+            randomized styles. In the first one, I'm construction an RGB code
+            (as a string) by randomizing each of the values and using a template
+            literal to put them all together. The second function does basically
+            the same thing, but I'm randomizing a border size (up to 10 pixels),
+            and border style (chosen from the array of strings), and a color
+            created using selectRandomColor().
+          </p>
+          <img src="./images/blog-post-11-18-23-functions.png"
+            alt="A screenshot of the functions selectRandomColor() and selectRandomBorder.">
+          <footer>
+            <i>-Josh</i>
+            <hr>
+          </footer>
+        </article>
+        <article class="blog-post">
+          <header>
             <h2>11/08/23 - CSS Transform: rotate</h2>
           </header>
           <p>
@@ -320,5 +363,6 @@
       </main>
       <footer>&copy; 2023 Joshua Byrd</footer>
     </div>
+    <script src="./scripts/blog.js"></script>
   </body>
 </html>
