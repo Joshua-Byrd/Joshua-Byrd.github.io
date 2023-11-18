@@ -39,7 +39,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
-    background-color: rgb(32, 30, 26, 0.90);
+    background-color: rgb(32, 30, 26, 0.96);
     border: 1px solid #b3b2ae;
     border-radius: 5px;
     padding: 15px;
@@ -295,7 +295,8 @@ textarea {
 /* Resume page-------------------------------------------------------------- */
 
 dt,
-#resume-container div h3 {
+#resume-skills-container div h3,
+#resume-projects-container div h3 {
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
@@ -312,7 +313,8 @@ dt,
     margin-top: 0px;
 }
 
-#resume-container {
+#resume-skills-container,
+#resume-projects-container {
     display: flex;
     max-width: 95%;
     margin-left: auto;
@@ -320,10 +322,28 @@ dt,
     justify-content: space-evenly;
 }
 
-#resume-container div {
+#resume-skills-container div {
     max-width: 90%;
     width: 30%;
 }
+
+#resume-projects-container div {
+    max-width: 90%;
+    width: 20%;
+}
+
+.resume-projects-python-logo,
+.resume-project-java-logo,
+.resume-projects-postgresql-logo {
+    position: absolute;
+    opacity: 25%;
+    width: 50px;
+}
+
+
+
+
+
 
 
 
