@@ -41,17 +41,17 @@
           <form id="contact-form" action="https://formspree.io/f/myyqvojr"
             method="post">
             <h3>Leave me a Message here...</h3>
-            <p>Name</p>
+            <p><label for="name">Name</label></p>
             <input type="text" name="name" id="name" maxlength="100">
-            <p>Email</p>
-            <input type="text" name="email" id="email" maxlength="100">
-            <p>What is this message about? </p>
+            <p><label for="email">Email</label></p>
+            <input type="email" name="email" id="email" maxlength="100">
+            <p><label for="about-select">What is this message about?</label></p>
             <select name="about-select">
               <option value="hire">I want to hire you.</option>
               <option value="question">I have a question about the site.</option>
               <option value="chat">I just want to chat.</option>
             </select>
-            <p>Message</p>
+            <p><label for="message">Message</label></p>
             <textarea id="message" name="message" cols="50"
               rows="5">Write something...</textarea>
             <div id="warning-box"></div>
