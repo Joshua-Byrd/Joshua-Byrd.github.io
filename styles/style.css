@@ -296,13 +296,28 @@ textarea {
 
 dt,
 #resume-skills-container div h3,
-#resume-projects-container div h3 {
+#resume-projects-container div h3,
+#resume-experience h3 {
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
     padding-top: 5px;
     color: #fdd06b;
     margin-bottom: 0px;
+}
+
+#resume-experience h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+
+.resume-experience-div {
+    width: 40%;
+    max-width: 90%;
 }
 
 .resume-headings {
@@ -314,13 +329,15 @@ dt,
 }
 
 #resume-skills-container,
-#resume-projects-container {
+#resume-projects-container,
+.resume-experience-container {
     display: flex;
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-evenly;
 }
+
 
 #resume-skills-container div {
     max-width: 90%;

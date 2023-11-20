@@ -43,8 +43,10 @@
             <h3>Leave me a Message here...</h3>
             <p><label for="name">Name</label></p>
             <input type="text" name="name" id="name" maxlength="100">
+            <div id="name-warning-box"></div>
             <p><label for="email">Email</label></p>
             <input type="email" name="email" id="email" maxlength="100">
+            <div id="email-warning-box"></div>
             <p><label for="about-select">What is this message about?</label></p>
             <select name="about-select">
               <option value="hire">I want to hire you.</option>
@@ -54,7 +56,7 @@
             <p><label for="message">Message</label></p>
             <textarea id="message" name="message" cols="50"
               rows="5">Write something...</textarea>
-            <div id="warning-box"></div>
+            <div id="message-warning-box"></div>
             <p>
               <input type="submit" name="submit" value="Submit">
             </p>
