@@ -18,7 +18,7 @@ function validName(name) {
 
 /**
  * 
- * Test if email is valid (not comprehensive, just good enough for now) 
+ * Test if email is valid (not comprehensive, just basic email formats) 
  * 
  */
 function validEmail(email) {
