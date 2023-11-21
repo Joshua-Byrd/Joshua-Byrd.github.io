@@ -1,60 +1,125 @@
-/*
-Erase default text when user clicks in textarea. This only happens once, so a user can click away and come back to the message. If the user clicks away and the textarea is blank, a warning message appears. The message will disappear if the user clicks back into the textarea. Also prevent submission if empty.
-*/
+
 const message = document.querySelector("#message");
 const messageWarningBox = document.querySelector("#message-warning-box");
-const submitButton = document.querySelector("input[type='submit']");
+const nameText = document.querySelector("#name");
+const nameWarningBox = document.querySelector("#name-warning-box");
+const email = document.querySelector("#email");
+const emailWarningBox = document.querySelector("#email-warning-box");
+
+/*Validator functions---------------------------------------------------------*/
+
+/**
+ * Test if name has at least two characters and only contains letters
+ */
+function validName(name) {
+    regex = /^[a-zA-Z]{2,}$/
+    return regex.test(name);
+}
+
+/**
+ * 
+ * Test if email is valid (not comprehensive, just good enough for now) 
+ * 
+ */
+function validEmail(email) {
+    regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    return regex.test(email);
+
+}
+
+/**
+ * 
+ * Test if message is not empty 
+ * 
+ */
+function validMessage(message) {
+    return !(message === "");
+}
+
+
+/* Event listeners for warning messages-------------------------------------- */
 
 message.addEventListener("focus", () => {
     message.value = "";
 }, {once:true});
 
+
 message.addEventListener("focus", () => {
     messageWarningBox.innerHTML = "";
+    message.style.border = "none";
 });
 
 message.addEventListener("blur", () => {
-    if (message.value === "") {
+    if (!validMessage(message.value)) {
         displayMessageWarning();
+    } else {
+        message.style.border = "2px solid green";
     }
 });
 
-submitButton.addEventListener("submit", (e)=> {
-    if (message.value === "") {
-        e.preventDefault;
-        displayMessageWarning();
+email.addEventListener("focus", ()=> {
+    emailWarningBox.innerHTML = "";
+    email.style.border = "none";
+})
+
+email.addEventListener("blur", () => {
+    if (!validEmail(email.value)) {
+        displayEmailWarning();
+    } else {
+        email.style.border = "2px solid green";
     }
 })
 
+nameText.addEventListener("focus", ()=> {
+    nameWarningBox.innerHTML = "";
+    nameText.style.border = "none";
+})
+
+nameText.addEventListener("blur", () => {
+    if (!validName(nameText.value)) {
+        displayNameWarning();
+    } else {
+        nameText.style.border = "2px solid green";
+    }
+})
+
+/*Functions to display warnings---------------------------------------------- */
+
 function displayMessageWarning() {
     messageWarningBox.innerHTML = "Message must not be blank";
+    message.style.border = "1px solid red";
 }
-
-
-/*
-Check to make sure email contains the @ symbol and displays a warning if not.
-If the user clicks back into the email box, the warning disappears. Prevent submission if not the correct format.
-*/
-const email = document.querySelector("#email");
-const emailWarningBox = document.querySelector("#email-warning-box");
-
-email.addEventListener("blur", () => {
-    if (!email.value.includes("@")) {
-        displayEmailWarning();
-    }  
-})
-
-email.addEventListener("focus", ()=> {
-    emailWarningBox.innerHTML = "";
-})
 
 function displayEmailWarning() {
-    emailWarningBox.innerHTML = "Email address must contain '@'";
+    emailWarningBox.innerHTML = "Must be a valid email address";
+    email.style.border = "1px solid red";
 }
 
-submitButton.addEventListener("submit", (e)=> {
-    if (!email.value.includes("@")) {
-        e.preventDefault;
+function displayNameWarning() {
+    nameWarningBox.innerHTML = "Name must contain at least two characters and only letters."
+    nameText.style.border = "1px solid red";
+}
+
+
+/**
+ * Checks that name, email, and message are all valid. Returns false if any fail and displays the appropriate message.
+ * 
+ */
+function validateForm() {
+    if (!validName(nameText.value)) {
+        displayNameWarning();
+        return false;
+    }
+
+    if (!validEmail(email.value)) {
         displayEmailWarning();
-    }  
-})
+        return false;
+    }
+
+    if (!validMessage(message.value)) {
+        displayMessageWarning();
+        return false;
+    }
+
+    return true;
+}
