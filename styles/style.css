@@ -12,6 +12,8 @@ background color: #201e1a
 main text color: #888783
 highlight color: #877046
 bright highlight color: #fdd06b
+accordion background: #3a3325;
+accordion content: #1d180e;
 
 Fonts from Google
 Josephine Sans
@@ -46,6 +48,7 @@ body {
     max-width: 960px;
     box-shadow: 0px 0px 5px;
 }
+
 
 
 h2,
@@ -188,7 +191,40 @@ img.code-screenshots {
     max-width: 90%;
 }
 
+#accordion-container {
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.accordion {
+    max-width: 800px;
+    width: 100%;
+    background-color: #3a3325;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.accordion .accordion-content {
+    background-color: #1d180e;
+    border-radius: 2px;
+}
+
+.accordion-content header {
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion-content .description {
+    padding: 0 15px;
+}
 
 /* Projects page------------------------------------------------------------- */
 

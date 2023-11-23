@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Template page-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A portfolio site for Joshua Byrd">
+        <link href="./styles/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            rel="stylesheet">
+        <title>Blog Accordion</title>
+    </head>
+
+    <body>
+        <div class="page">
+            <header>
+                <!--Header will contain logo, page title, and main navigation-->
+                <nav class="header-navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <h1>
+                    Main Heading
+                </h1>
+            </header>
+            <main id="accordion-container">
+                <div class="accordion">
+                    <div class="accordion-content">
+                        <header>
+                            <span class="title"><h3>Test Blog post</h3></span>
+                            <h3><i class="fa-solid fa-plus"></i></h3>
+                        </header>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Placeat vero corporis praesentium deleniti
+                            harum. Eos molestias optio aspernatur nihil quisquam
+                            tempore doloribus voluptate delectus excepturi,
+                            maxime eveniet? Eveniet, necessitatibus assumenda!
+                        </p>
+                    </div>
+                    <div class="accordion-content">
+                        <header>
+                            <span class="title"><h3>Test Blog Post 2</h3></span>
+                            <h3><i class="fa-solid fa-plus"></i></h3>
+                        </header>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Placeat vero corporis praesentium deleniti
+                            harum. Eos molestias optio aspernatur nihil quisquam
+                            tempore doloribus voluptate delectus excepturi,
+                            maxime eveniet? Eveniet, necessitatibus assumenda!
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <footer>&copy; 2023 Joshua Byrd</footer>
+        </div>
+        <script src="./scripts/blog.js"></script>
+    </body>
+</html>

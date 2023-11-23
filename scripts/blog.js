@@ -1,3 +1,21 @@
+/**Accordion------------------------------------------------------------------*/
+const accordionContent = document.querySelectorAll(".accordion-content");
+
+//Select the header in each blog post and add a toggle class "open"
+//to show or hide the post
+accordionContent.forEach((item, index) => {
+    let header = item.querySelector("header")
+    //when the header is clicked, toggle "open" class on the accordion content
+    header.addEventListener("click", () => {
+        item.classList.toggle("open");
+    })
+    console.log(header);
+})
+
+
+
+/**11-18-23 Blog Post---------------------------------------------------------*/
+
 
 //Select the blog div and call the randomization functions on click
 const blogPostDiv1118 = document.querySelector('#blog-post-div-11-18-23');
