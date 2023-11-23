@@ -424,6 +424,13 @@ dt,
     #contact-aside {
         margin-top: 15px;
     }
+
+    #resume-skills-container,
+    #resume-projects-container,
+    .resume-experience-container {
+        flex-direction: column;
+
+    }
 }
 
 /* Media query for print version--------------------------------------------- */
