@@ -176,7 +176,8 @@ img.code-screenshots {
 
 #blog-post-div-11-18-23 {
     width: 150px;
-    padding: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
@@ -184,6 +185,7 @@ img.code-screenshots {
     background-color: #b3b2ae;
     color: #201e1a;
     cursor: pointer;
+    max-width: 90%;
 }
 
 
