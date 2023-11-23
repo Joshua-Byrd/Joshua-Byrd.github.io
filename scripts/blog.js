@@ -8,18 +8,28 @@ accordionContent.forEach((item, index) => {
     //when the header is clicked, toggle "open" class on the accordion content
     header.addEventListener("click", () => {
         item.classList.toggle("open");
-    })
-    console.log(header);
-})
 
+        let description = item.querySelector(".description");
+        if (item.classList.contains("open")) {
+            description.style.height = `${description.scrollHeight}px`;
+            item.querySelector("i").classList.replace("fa-plus","fa-minus");
+        } else {
+            description.style.height = "0px";
+            item.querySelector("i").classList.replace("fa-minus","fa-plus");
+        }
+        
+        console.log(description);
+    })
+
+})
 
 
 /**11-18-23 Blog Post---------------------------------------------------------*/
 
 
 //Select the blog div and call the randomization functions on click
-const blogPostDiv1118 = document.querySelector('#blog-post-div-11-18-23');
-blogPostDiv1118.addEventListener('click', () => {
+const blogPostDiv1118 = document.querySelector("#blog-post-div-11-18-23");
+blogPostDiv1118.addEventListener("click", () => {
     blogPostDiv1118.style.color = selectRandomColor();
     blogPostDiv1118.style.backgroundColor = selectRandomColor();
     blogPostDiv1118.style.border = selectRandomBorder();
