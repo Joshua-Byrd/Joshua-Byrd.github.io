@@ -417,13 +417,6 @@ dt,
 }
 
 
-
-
-
-
-
-
-
 /* media queries ------------------------------------------------------------*/
 @media(max-width:992px) {
     h1 {
@@ -524,7 +517,10 @@ dt,
     #about-picture-aside,
     #blog-kermit-gif,
     audio,
-    video {
+    video,
+    .resume-projects-python-logo,
+    .resume-projects-java-logo,
+    .resume-projects-postgresql-logo {
         display: none;
     }
 
