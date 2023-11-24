@@ -141,6 +141,57 @@ a:active {
     color: #fdd06b;
 }
 
+/* Landing Page---------------------------------------------------------------*/
+.hidden {
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute;
+    transform: translateY(150px); */
+    margin-top: 150px;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.hidden.active {
+    display: flex;
+    opacity: 1;
+    transition: .3s;
+    margin-top: 0px;
+}
+
+.hidden h2 {
+    font-size: 4em;
+    letter-spacing: .2em;
+}
+
+.text-card {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    max-width: 90%;
+}
+
+#landing-projects {
+    text-align: right;
+}
+
+#landing-blog {
+    text-align: center;
+}
+
+#landing-gallery {
+    text-align: left;
+}
+
+#landing-about {
+    text-align: right;
+}
+
+#landing-contact {
+    justify-content: center;
+}
+
 /* Blog page----------------------------------------------------------------- */
 
 
