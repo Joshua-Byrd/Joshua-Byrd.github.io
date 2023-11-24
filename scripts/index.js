@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+    const downArrow = document.querySelector("#down-arrow");
+    downArrow.style.opacity = 1;
+})
 window.addEventListener("scroll", reveal)
 
 function reveal() {

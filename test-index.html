@@ -10,6 +10,9 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&display=swap"
             rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            rel="stylesheet">
         <title>Home</title>
     </head>
 
@@ -46,16 +49,14 @@
                         Software
                         Development with the end goal of starting a new
                         career in tech.
-
                     </p>
                 </div>
-                <!--Testing Vue-->
-                <!-- <div id="app">
-          {{greeting}}
-          <input v-model="greeting">
-        </div> -->
+                <div id="down-arrow">
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
                 <section id="landing-resume" class="hidden">
-                    <h2>Resume</h2>
+                    <h2><a href="./resume.html">Resume</a></h2>
                     <div class="text-card">
                         <p>Lorem ipsum dolor sit amet
                             consectetur
@@ -76,10 +77,10 @@
                         Natus tempore voluptatum dicta magnam dolor, explicabo,
                         officiis facilis autem consequatur delectus velit
                         aperiam facere.</div>
-                    <h2>Projects</h2>
+                    <h2><a href="./projects.html">Projects</a></h2>
                 </section>
                 <section id="landing-blog" class="hidden">
-                    <h2>Blog</h2>
+                    <h2><a href="./blog.html">Blog</a></h2>
                     <div class="text-card">Lorem ipsum dolor sit amet,
                         consectetur
                         adipisicing
@@ -95,10 +96,10 @@
                         elit. Pariatur non beatae numquam alias doloribus? Nam
                         assumenda quisquam maiores officia expedita ut est? Quas
                         repellat alias cumque, hic iste labore architecto.</div>
-                    <h2>Gallery</h2>
+                    <h2><a href="./gallery.html">Gallery</a></h2>
                 </section>
                 <section id="landing-about" class="hidden">
-                    <h2>About</h2>
+                    <h2><a ref="./about.html">About</a></h2>
                     <div class="text-card">Lorem ipsum dolor sit amet
                         consectetur,
                         adipisicing
@@ -108,8 +109,13 @@
                         recusandae aut debitis, non est dignissimos neque iusto!</div>
                 </section>
                 <section id="landing-contact" class="hidden">
-                    <h2>Contact</h2>
+                    <h2><a href="./contact.html">Contact</a></h2>
                 </section>
+                <!--Testing Vue-->
+                <!-- <div id="app">
+          {{greeting}}
+          <input v-model="greeting">
+        </div> -->
 
             </main>
             <footer>&copy; 2023 Joshua Byrd</footer>

@@ -142,22 +142,26 @@ a:active {
 }
 
 /* Landing Page---------------------------------------------------------------*/
+#down-arrow {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 4rem;
+    opacity: 0;
+    transition: 2s ease;
+}
+
 .hidden {
-    display: none;
     display: flex;
-    justify-content: space-between;
-    /* position: absolute;
-    transform: translateY(150px); */
-    margin-top: 150px;
+    justify-content: space-evenly;
+    position: relative;
+    transform: translateY(150px);
     opacity: 0;
     transition: 2s ease;
 }
 
 .hidden.active {
-    display: flex;
     opacity: 1;
-    transition: .3s;
-    margin-top: 0px;
+    transform: translateY(0px);
 }
 
 .hidden h2 {
@@ -172,15 +176,22 @@ a:active {
     max-width: 90%;
 }
 
+#landing-resume {
+    /* padding-left: 30px; */
+}
+
 #landing-projects {
+    /* padding-right: 30px; */
     text-align: right;
 }
 
 #landing-blog {
+    /* padding-left: 30px; */
     text-align: center;
 }
 
 #landing-gallery {
+    /* padding-right: 30px; */
     text-align: left;
 }
 
