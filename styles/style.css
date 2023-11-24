@@ -142,11 +142,36 @@ a:active {
 }
 
 /* Landing Page---------------------------------------------------------------*/
+#subheading {
+    text-align: center;
+    opacity: 0;
+    transition: 2s ease;
+}
+
 #down-arrow {
     margin-top: 50px;
     text-align: center;
     font-size: 4rem;
     opacity: 0;
+    transition: 2s ease;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+    }
+
+    50% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+    }
+}
+
+#down-arrow.glow {
+    animation: glowing 2s ease-in-out;
     transition: 2s ease;
 }
 
@@ -164,8 +189,9 @@ a:active {
     transform: translateY(0px);
 }
 
-.hidden h2 {
-    font-size: 4em;
+.hidden h2 a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
     letter-spacing: .2em;
 }
 
@@ -176,22 +202,16 @@ a:active {
     max-width: 90%;
 }
 
-#landing-resume {
-    /* padding-left: 30px; */
-}
 
 #landing-projects {
-    /* padding-right: 30px; */
     text-align: right;
 }
 
 #landing-blog {
-    /* padding-left: 30px; */
     text-align: center;
 }
 
 #landing-gallery {
-    /* padding-right: 30px; */
     text-align: left;
 }
 

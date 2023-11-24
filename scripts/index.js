@@ -1,11 +1,30 @@
+/**
+ * Adds the glow effect to the down arrow
+ */
 window.addEventListener("load", () => {
+    const subheading = document.querySelector("#subheading");
     const downArrow = document.querySelector("#down-arrow");
-    downArrow.style.opacity = 1;
-})
-window.addEventListener("scroll", reveal)
 
-function reveal() {
-    const hiddenSections = document.querySelectorAll(".hidden");
+    setTimeout(() => {
+        subheading.style.opacity = 1;
+    }, 1000)
+
+     setTimeout(() => {
+       downArrow.style.opacity = 1;
+    }, 3000)
+
+    //glow appears every 1 to 4 seconds
+    setInterval(() => {
+        downArrow.classList.toggle("glow");
+    }, Math.floor((Math.random() * 4 + 1) * 1000));
+});
+
+
+/**
+ * Reveals the headings on scroll
+ */
+window.addEventListener("scroll", () => {
+     const hiddenSections = document.querySelectorAll(".hidden");
 
     for (hidden of hiddenSections) {
         const windowHeight = window.innerHeight;
@@ -14,13 +33,13 @@ function reveal() {
 
         if (hiddenTop - windowHeight - hiddenTop) {
             hidden.classList.add("active");
-            hiddenSections[0].childNodes[3].classList.add("active");
         } else {
             hidden.classList.remove("active");
-            hiddenSections[0].childNodes[3].classList.remove("active");
         }
     }
-}
+});
+
+
 
 
 // const app = Vue.createApp({

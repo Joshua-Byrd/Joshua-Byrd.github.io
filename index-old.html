@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site for Joshua Byrd">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet">
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header id="landing-header">
+        <!--Header will contain logo, page title, and main navigation-->
+        <nav class="header-navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="spacer">\</li>
+            <li><a href="resume.html">Resume</a></li>
+            <li class="spacer">\</li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="spacer">\</li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="spacer">\</li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="spacer">\</li>
+            <li><a href="about.html">About</a></li>
+            <li class="spacer">\</li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <h1 id="landing-heading">
+          Joshua Byrd
+        </h1>
+      </header>
+      <main id="landing-main">
+        <div>
+          <p>
+            I'm a graduate student working on a Master of Science in Software
+            Development with the end goal of starting a new career in tech.
+            Please, use the links above to view projects that I've built, read
+            the blog chronicling my journey, or to find out more about
+            me.
+          </p>
+        </div>
+        <!--Testing Vue-->
+        <!-- <div id="app">
+          {{greeting}}
+          <input v-model="greeting">
+        </div> -->
+      </main>
+      <footer>&copy; 2023 Joshua Byrd</footer>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

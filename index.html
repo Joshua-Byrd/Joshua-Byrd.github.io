@@ -1,63 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A portfolio site for Joshua Byrd">
-    <link href="./styles/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&display=swap"
-      rel="stylesheet">
-    <title>Home</title>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A portfolio site for Joshua Byrd">
+        <link href="./styles/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            rel="stylesheet">
+        <title>Home</title>
+    </head>
 
-  <body>
-    <div class="page">
-      <header id="landing-header">
-        <!--Header will contain logo, page title, and main navigation-->
-        <nav class="header-navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="spacer">\</li>
-            <li><a href="resume.html">Resume</a></li>
-            <li class="spacer">\</li>
-            <li><a href="projects.html">Projects</a></li>
-            <li class="spacer">\</li>
-            <li><a href="blog.html">Blog</a></li>
-            <li class="spacer">\</li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li class="spacer">\</li>
-            <li><a href="about.html">About</a></li>
-            <li class="spacer">\</li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <h1 id="landing-heading">
-          Joshua Byrd
-        </h1>
-      </header>
-      <main id="landing-main">
-        <div>
-          <p>
-            I'm a graduate student working on a Master of Science in Software
-            Development with the end goal of starting a new career in tech.
-            Please, use the links above to view projects that I've built, read
-            the blog chronicling my journey, or to find out more about
-            me.
-          </p>
-        </div>
-        <!--Testing Vue-->
-        <!-- <div id="app">
+    <body>
+        <div class="page">
+            <header id="landing-header">
+                <!--Header will contain logo, page title, and main navigation-->
+                <nav class="header-navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="spacer">\</li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1 id="landing-heading">
+                    Joshua Byrd
+                </h1>
+            </header>
+            <main id="landing-main">
+                <div id="subheading">
+                    <h3>
+                        I'm a graduate student working on a Master of
+                        Science in Software Development.
+                    </h3>
+                </div>
+                <div id="down-arrow">
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <section id="landing-resume" class="hidden">
+                    <h2><a href="./resume.html">Resume</a></h2>
+                    <div class="text-card">
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing
+                            elit. Temporibus atque consequatur repellat ad
+                            asperiores minus voluptate aperiam voluptatem
+                            molestias
+                            ipsum, ratione corrupti nobis error voluptatum
+                            repudiandae, architecto, animi nisi ipsam?
+                        </p>
+                    </div>
+                </section>
+                <section id="landing-projects" class="hidden">
+                    <div class="text-card">Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing
+                        elit. Odio repellendus officia placeat amet ipsam natus.
+                        Natus tempore voluptatum dicta magnam dolor, explicabo,
+                        officiis facilis autem consequatur delectus velit
+                        aperiam facere.</div>
+                    <h2><a href="./projects.html">Projects</a></h2>
+                </section>
+                <section id="landing-blog" class="hidden">
+                    <h2><a href="./blog.html">Blog</a></h2>
+                    <div class="text-card">Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing
+                        elit. Distinctio optio, dolor repellendus quisquam
+                        dignissimos rerum sunt. Ipsa distinctio amet esse
+                        laudantium nobis modi fuga, vitae debitis laboriosam aut
+                        incidunt quod.</div>
+                </section>
+                <section id="landing-gallery" class="hidden">
+                    <div class="text-card">Lorem ipsum, dolor sit amet
+                        consectetur
+                        adipisicing
+                        elit. Pariatur non beatae numquam alias doloribus? Nam
+                        assumenda quisquam maiores officia expedita ut est? Quas
+                        repellat alias cumque, hic iste labore architecto.</div>
+                    <h2><a href="./gallery.html">Gallery</a></h2>
+                </section>
+                <section id="landing-about" class="hidden">
+                    <h2><a href="./about.html">About</a></h2>
+                    <div class="text-card">Lorem ipsum dolor sit amet
+                        consectetur,
+                        adipisicing
+                        elit. Distinctio amet tenetur numquam, perferendis
+                        necessitatibus asperiores consequuntur sapiente?
+                        Reprehenderit totam, quasi molestias consequuntur
+                        recusandae aut debitis, non est dignissimos neque iusto!</div>
+                </section>
+                <section id="landing-contact" class="hidden">
+                    <h2><a href="./contact.html">Contact</a></h2>
+                </section>
+                <!--Testing Vue-->
+                <!-- <div id="app">
           {{greeting}}
           <input v-model="greeting">
         </div> -->
-      </main>
-      <footer>&copy; 2023 Joshua Byrd</footer>
-    </div>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./scripts/index.js"></script>
-  </body>
+
+            </main>
+            <footer>&copy; 2023 Joshua Byrd</footer>
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./scripts/index.js"></script>
+    </body>
 </html>
