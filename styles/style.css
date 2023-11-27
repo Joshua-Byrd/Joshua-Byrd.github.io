@@ -125,6 +125,26 @@ a:active {
     margin-top: 25px;
 }
 
+input[type="button"],
+#contact-form input[type=submit] {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px 25px;
+    background-color: #fdd06b;
+    color: #201e1a;
+    border: none;
+    transition: .2s;
+}
+
+input[type="button"]:hover,
+input[type="button"]:active,
+#contact-form input[type=submit]:hover,
+#contact-form input[type=submit]:active {
+    padding: 10px 25px;
+    background-color: #c5a24f;
+    transition: .2s;
+}
+
 /* About page-----------------------------------------------------------------*/
 
 #about-picture-aside {
@@ -138,6 +158,20 @@ a:active {
 }
 
 #schweitzer-quote blockquote>b {
+    color: #fdd06b;
+}
+
+#joke-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#joke-display {
+    padding: 15px;
     color: #fdd06b;
 }
 
@@ -398,14 +432,6 @@ textarea {
     max-width: 90%;
 }
 
-#contact-form input[type=submit] {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #b3b2ae;
-    color: #201e1a !important;
-    border: none;
-    border-radius: 1px;
-
-}
 
 #contact-container {
     flex-direction: row;
