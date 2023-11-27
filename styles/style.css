@@ -556,7 +556,8 @@ dt,
         font-size: 2em;
     }
 
-    .header-navbar ul {
+    .header-navbar ul,
+    .hidden {
         flex-direction: column;
         justify-content: center;
     }

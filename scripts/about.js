@@ -8,11 +8,13 @@ const headers = new Headers({
     "User-Agent": "joshua-byrd@github.io"
 });
 
+//options object to send with fetch request
 const options = {
     method: "GET",
     headers:headers
 }
 
+//fetch the joke, parse to json and add to the joke-display div
 jokeButton.addEventListener("click", () => {
     fetch("https://icanhazdadjoke.com/", options)
     .then((response) => response.json())
