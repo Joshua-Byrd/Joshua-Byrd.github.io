@@ -41,10 +41,17 @@
                 </h1>
             </header>
             <main id="vue-projects-main" v-cloak>
-                <project>
 
-                </project>
+                <custom-form>
 
+                </custom-form>
+
+                <hr>
+                <input @click="toggleBox" type="button"
+                    id="button"
+                    name="button" value="Toggle box">
+
+                <div v-if="isVisible" class="box"></div>
             </main>
             <footer>&copy; 2023 Joshua Byrd</footer>
         </div>

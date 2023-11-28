@@ -390,6 +390,17 @@ tr.odd {
     position: relative;
 }
 
+/* Vue Styles----------------------------------------------------------------*/
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+[v-cloak] {
+    display: none;
+}
+
 /* Gallery page-------------------------------------------------------------- */
 
 #gallery-container {
