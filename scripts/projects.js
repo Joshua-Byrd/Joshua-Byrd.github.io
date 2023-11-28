@@ -36,8 +36,42 @@ app.component("project", {
     },
 
     methods: {
-        
+
     }
+})
+//custom component for main navbar
+app.component("navbar", {
+    template: `
+        <header>
+            <nav class="header-navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="spacer">\\</li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li class="spacer">\\</li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="spacer">\\</li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="spacer">\\</li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="spacer">\\</li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="spacer">\\</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>
+                {{header}}
+            </h1>
+        </header>
+    `,
+    data: function() {
+        return {
+            header: "Projects"
+        }
+    },
+    methods: {}
 })
 app.mount("#vue-projects-main");
 
