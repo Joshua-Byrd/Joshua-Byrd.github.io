@@ -147,6 +147,10 @@ input[type="button"]:active,
 
 /* About page-----------------------------------------------------------------*/
 
+#about-main article p {
+    line-height: 1.4rem;
+}
+
 #about-picture-aside {
     float: right;
     max-width: 90%;
