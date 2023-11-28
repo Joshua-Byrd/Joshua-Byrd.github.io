@@ -4,11 +4,13 @@
 window.addEventListener("load", () => {
     const subheading = document.querySelector("#subheading");
     const downArrow = document.querySelector("#down-arrow");
-
+    
+    //subheading appears first...
     setTimeout(() => {
         subheading.style.opacity = 1;
     }, 1000)
 
+    //...then the down arrow
      setTimeout(() => {
        downArrow.style.opacity = 1;
     }, 3000)

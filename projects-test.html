@@ -12,7 +12,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&display=swap"
             rel="stylesheet">
-        <title>Template</title>
+        <title>Projects</title>
     </head>
 
     <body>
@@ -37,14 +37,15 @@
                 </nav>
 
                 <h1>
-                    Main Heading
+                    Projects
                 </h1>
             </header>
-            <main>
-
+            <main id="vue-projects-main">
+                {{ greeting }}
             </main>
             <footer>&copy; 2023 Joshua Byrd</footer>
         </div>
-        <script src="./scripts/app.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./scripts/projects.js"></script>
     </body>
 </html>
