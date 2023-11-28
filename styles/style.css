@@ -232,8 +232,14 @@ input[type="button"]:active,
 .text-card {
     display: flex;
     align-items: center;
-    width: 60%;
+    justify-content: flex-start;
+    width: 40%;
     max-width: 90%;
+    color: #fdd06b;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+
 }
 
 
