@@ -470,14 +470,22 @@ textarea {
     list-style: none;
 }
 
-#contact-aside ul li {
+#contact-aside ul li a {
     line-height: 2em;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-#contact-github-logo,
+/* #contact-github-logo,
 #contact-linkedin-logo {
     width: 25px;
     padding-right: 10px;
+} */
+
+.fa-brands {
+    font-size: 3rem;
+    margin-right: 10px;
 }
 
 /* Resume page-------------------------------------------------------------- */
