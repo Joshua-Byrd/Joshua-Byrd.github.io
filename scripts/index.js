@@ -2,15 +2,21 @@
  * Adds the glow effect to the down arrow
  */
 window.addEventListener("load", () => {
-    const subheading = document.querySelector("#subheading");
+    const subheading = document.querySelector("#subheading-1");
+    const subheading2 = document.querySelector("#subheading-2");
     const downArrow = document.querySelector("#down-arrow");
     
-    //subheading appears first...
+    //subheading-1 appears first...
     setTimeout(() => {
         subheading.style.opacity = 1;
     }, 1000)
 
-    //...then the down arrow
+    //...then the second subheading...
+    setTimeout(() => {
+        subheading2.style.opacity = 1;
+    }, 2000)
+
+    //...finally the down arrow
      setTimeout(() => {
        downArrow.style.opacity = 1;
     }, 3000)

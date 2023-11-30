@@ -180,7 +180,8 @@ input[type="button"]:active,
 }
 
 /* Landing Page---------------------------------------------------------------*/
-#subheading {
+#subheading-1,
+#subheading-2 {
     text-align: center;
     opacity: 0;
     transition: 2s ease;
@@ -400,12 +401,16 @@ tr.odd {
     position: relative;
 }
 
-/* Vue Styles----------------------------------------------------------------*/
-.box {
-    width: 150px;
-    height: 150px;
-    background-color: blue;
+#projects-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.project-grid-item {
+    padding: 15px;
+}
+
+/* Vue Styles----------------------------------------------------------------*/
 
 [v-cloak] {
     display: none;
