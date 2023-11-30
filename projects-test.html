@@ -17,10 +17,17 @@
 
     <body>
         <div class="page">
-            <main id="vue-projects-main" v-cloak>
-                <navbar></navbar>
-                <project></project>
-
+            <main id="vue-projects-main">
+                <header-navbar header="Projects"></header-navbar>
+                <div v-for="p in projects" :key="p.id">
+                    <h2>
+                        {{ p.heading }}
+                    </h2>
+                    <h3 class="project-github-link">
+                        <a :href="p.github" target="_blank">See it on Github</a>
+                    </h3>
+                    <p>{{ p.description }}</p>
+                </div>
             </main>
             <footer>&copy; 2023 Joshua Byrd</footer>
         </div>
@@ -28,3 +35,8 @@
         <script src="./scripts/projects.js"></script>
     </body>
 </html>
+
+<!-- <project
+                    heading="Database for Fitness/Nutrition App"
+                    github="https://github.com/Joshua-Byrd/CS669_term_project"
+                    description="This PostgreSQL database was my term project for CS669 at Boston University. I built it with the idea that it could be used for a fitness and nutrition tracking app. With this database, an app could store data about users' workouts, food eaten, and so on, and query for statistics for both. Included in  the script are queries to populate all tables, stored procedures to apply transactions like creating a new template entry and associating a template with a users, and triggers for updating a users' personal bests and logging a password change by a user."></project> -->
