@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <!--Testing Vue-->
+    <!-- <i class="fa-brands fa-python"></i> -->
+    <!-- <i class="fa-brands fa-java"></i> -->
+    <!-- <i class="fa-solid fa-database"></i> -->
 
     <head>
         <meta charset="UTF-8">
@@ -12,12 +15,15 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&display=swap"
             rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            rel="stylesheet">
         <title>Projects</title>
     </head>
 
     <body>
         <div class="page">
-            <main id="vue-projects-main">
+            <main id="vue-projects-main" v-cloak>
                 <header-navbar header="Projects"></header-navbar>
                 <div id="projects-grid-container">
                     <div v-for="p in projects" :key="p.id"
@@ -26,8 +32,12 @@
                             {{ p.heading }}
                         </h2>
                         <h3 class="project-github-link">
-                            <a :href="p.github" target="_blank">See it on Github</a>
+                            <a :href="p.github">See it on Github</a>
                         </h3>
+                        <div id="projects-img-div">
+                            <img :src="p.logo" class="projects-logos"
+                                alt="{{p.logo}}">
+                        </div>
                         <p>{{ p.description }}</p>
                     </div>
                 </div>
