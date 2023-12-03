@@ -211,7 +211,7 @@ input[type="button"]:active,
 
 #down-arrow.glow {
     animation: glowing 2s ease-in-out;
-    transition: 2s ease;
+    transition: 2s ease-in-out;
 }
 
 .hidden {
@@ -569,12 +569,27 @@ dt,
         font-size: 3em;
     }
 
-    h2 {
+    h2,
+    .resume-experience-container div h2 {
         font-size: 1.5em;
+    }
+
+    h3,
+    dt,
+    #resume-skills-container div h3,
+    #resume-projects-container div h3,
+    #resume-experience h3,
+    #resume-experience h4 {
+        font-size: 1rem;
     }
 
     table {
         max-width: 90%;
+    }
+
+    #down-arrow {
+        font-size: 3rem;
+
     }
 
 }
@@ -584,8 +599,29 @@ dt,
         font-size: 2em;
     }
 
-    .header-navbar ul,
-    .hidden {
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3,
+    dt,
+    h4 {
+        font-size: .75rem;
+    }
+
+    .text-card {
+        font-size: .75rem;
+    }
+
+    .header-navbar {
+        font-size: .75rem;
+    }
+
+    #down-arrow {
+        font-size: 2rem;
+    }
+
+    .header-navbar ul {
         flex-direction: column;
         justify-content: center;
     }
