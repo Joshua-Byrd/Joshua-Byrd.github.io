@@ -32,14 +32,18 @@ window.addEventListener("load", () => {
  * Reveals the headings on scroll
  */
 window.addEventListener("scroll", () => {
-     const hiddenSections = document.querySelectorAll(".hidden");
+    const hiddenSections = document.querySelectorAll(".hidden");
 
     for (hidden of hiddenSections) {
+        //get the height of the browser window
         const windowHeight = window.innerHeight;
+        //get the distance from the top of the viewport to the top of
+        //current element. 
         let hiddenTop = hidden.getBoundingClientRect().top;
         let hiddenPoint = 150;
-
-        if (hiddenTop - windowHeight - hiddenTop) {
+        //if the current element is within 150px of the bottom,
+        //reveal the element
+        if (hiddenTop < windowHeight - hiddenPoint) {
             hidden.classList.add("active");
         } else {
             hidden.classList.remove("active");
