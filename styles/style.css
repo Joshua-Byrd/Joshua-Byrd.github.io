@@ -12,8 +12,6 @@ background color: #201e1a
 main text color: #888783
 highlight color: #877046
 bright highlight color: #fdd06b
-accordion background: #3a3325;
-accordion content: #1d180e;
 
 Fonts from Google
 Josephine Sans
@@ -37,6 +35,7 @@ body {
 }
 
 .page {
+    font-size: 16px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;

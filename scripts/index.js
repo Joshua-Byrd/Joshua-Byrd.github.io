@@ -41,8 +41,8 @@ window.addEventListener("scroll", () => {
         //current element. 
         let hiddenTop = hidden.getBoundingClientRect().top;
         let hiddenPoint = 150;
-        //if the current element is within 150px of the bottom,
-        //reveal the element
+        //reveal the element when the top is within 150px
+        //of the bottom of the viewpoint
         if (hiddenTop < windowHeight - hiddenPoint) {
             hidden.classList.add("active");
         } else {
