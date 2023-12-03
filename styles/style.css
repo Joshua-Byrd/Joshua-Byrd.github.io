@@ -154,10 +154,11 @@ input[type="button"]:active,
 #about-picture-aside {
     float: right;
     max-width: 90%;
+    text-align: center;
 }
 
 #about-picture {
-    border-radius: 25%;
+    border-radius: 50%;
     max-width: 100%;
 }
 

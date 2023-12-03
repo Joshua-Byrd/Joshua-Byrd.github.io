@@ -106,20 +106,35 @@ function displayNameWarning() {
  * 
  */
 function validateForm() {
+    //if name is invalid display warning and check others
     if (!validName(nameText.value)) {
         displayNameWarning();
-        return false;
-    }
-
-    if (!validEmail(email.value)) {
+        if (!validEmail(email.value)) {
         displayEmailWarning();
+            if (!validMessage(message.value)) {
+            displayMessageWarning();
+            }
+        }
         return false;
+    //if name is valid, check email and message    
+    } else if (!validEmail(email.value)) {
+        displayEmailWarning();
+            if (!validMessage(message.value)) {
+            displayMessageWarning();
+        }
+
+        return false;
+    //check message if name and email are valid     
+    } else {
+        if (!validMessage(message.value)) {
+            displayMessageWarning();
+            return false;
+        }
     }
 
-    if (!validMessage(message.value)) {
-        displayMessageWarning();
-        return false;
-    }
+    
+
+    
 
     return true;
 }
