@@ -51,40 +51,6 @@ const app = Vue.createApp({
     methods: {},
 })
 
-//custom component for main header/navbar
-app.component("header-navbar", {
-    template: `
-        <header>
-            <nav class="header-navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="spacer">\\</li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li class="spacer">\\</li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li class="spacer">\\</li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="spacer">\\</li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li class="spacer">\\</li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="spacer">\\</li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
 
-            <h1>
-                {{header}}
-            </h1>
-        </header>
-    `,
-    props: {
-        header: {
-            type: String,
-            default: "DEFAULT HEADER"
-        }
-    },
-    methods: {}
-})
 app.mount("#vue-projects-main");
 
