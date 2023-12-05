@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+    const form = document.querySelector("#contact-form");
+    form.style.display = "block";
+})
+
 
 const message = document.querySelector("#message");
 const messageWarningBox = document.querySelector("#message-warning-box");

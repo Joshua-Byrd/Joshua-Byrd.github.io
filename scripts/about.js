@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+    const jokeSection = document.querySelector("#joke-section");
+    jokeSection.style.display = "flex";
+})
+
 const jokeButton = document.querySelector("#joke-button");
 const jokeDisplayDiv = document.querySelector("#joke-display");
 

@@ -48,7 +48,16 @@ body {
     box-shadow: 0px 0px 5px;
 }
 
+noscript div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
+noscript div h2 {
+    font-size: 3rem;
+}
 
 h2,
 h3 {
@@ -422,7 +431,8 @@ img.code-screenshots {
 }
 
 #accordion-container {
-    display: flex;
+
+    display: none;
     align-items: center;
     justify-content: center;
     width: 95%;
@@ -517,7 +527,7 @@ img.code-screenshots {
 }
 
 #joke-section {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -537,6 +547,7 @@ img.code-screenshots {
 }
 
 #contact-form {
+    display: none;
     max-width: 66%;
 }
 

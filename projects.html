@@ -23,29 +23,37 @@
 
     <body>
         <div class="page">
+            <nav class="header-navbar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-x"></i>
+                <ul>
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="spacer">\</li>
+                    <li class="menu-item"><a href="resume.html">Resume</a></li>
+                    <li class="spacer">\</li>
+                    <li class="menu-item"><a href="projects.html">Projects</a></li>
+                    <li class="spacer">\</li>
+                    <li class="menu-item"><a href="blog.html">Blog</a></li>
+                    <li class="spacer">\</li>
+                    <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                    <li class="spacer">\</li>
+                    <li class="menu-item"><a href="about.html">About</a></li>
+                    <li class="spacer">\</li>
+                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1 id="landing-heading">
+                Projects
+            </h1>
+            <noscript>
+                <div>
+                    <h2>This site requires JavaScript to work properly.
+                        Please
+                        enable it to view content.</h2>
+                </div>
+            </noscript>
             <main id="vue-projects-main" v-cloak>
-                <nav class="header-navbar">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-x"></i>
-                    <ul>
-                        <li class="menu-item"><a href="index.html">Home</a></li>
-                        <li class="spacer">\</li>
-                        <li class="menu-item"><a href="resume.html">Resume</a></li>
-                        <li class="spacer">\</li>
-                        <li class="menu-item"><a href="projects.html">Projects</a></li>
-                        <li class="spacer">\</li>
-                        <li class="menu-item"><a href="blog.html">Blog</a></li>
-                        <li class="spacer">\</li>
-                        <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                        <li class="spacer">\</li>
-                        <li class="menu-item"><a href="about.html">About</a></li>
-                        <li class="spacer">\</li>
-                        <li class="menu-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <h1 id="landing-heading">
-                    Projects
-                </h1>
+
                 <div id="projects-grid-container">
                     <div v-for="p in projects" :key="p.id"
                         class="project-grid-item">

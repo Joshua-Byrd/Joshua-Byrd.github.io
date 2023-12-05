@@ -1,3 +1,9 @@
+/**All accordion content is hidden by default in case JavaScript is disabled. This reveals it all if JavaScript is present. */
+window.addEventListener("load", () => {
+    const accordionContainer = document.querySelector("#accordion-container");
+    accordionContainer.style.display = "flex";
+})
+
 /**Accordion------------------------------------------------------------------*/
 const accordionContent = document.querySelectorAll(".accordion-content");
 
