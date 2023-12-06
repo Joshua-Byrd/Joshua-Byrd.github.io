@@ -747,30 +747,25 @@ textarea {
         border: 1px solid white;
     }
 
-    nav {
-        display: none;
-    }
-
-    footer {
-        display: none;
-    }
-
     h1,
     h2,
     h3,
     h4,
     h5,
-    h5 {
+    h6 {
         color: black;
     }
 
+    nav,
+    footer,
     #about-picture-aside,
     #blog-kermit-gif,
     audio,
     video,
     .resume-projects-python-logo,
     .resume-projects-java-logo,
-    .resume-projects-postgresql-logo {
+    .resume-projects-postgresql-logo,
+    .projects-logos {
         display: none;
     }
 
