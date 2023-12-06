@@ -127,6 +127,7 @@ a:active {
     letter-spacing: .2em;
     transition-duration: .2s;
     text-shadow: none;
+    text-decoration: underline;
 }
 
 .page>footer {
@@ -664,7 +665,6 @@ textarea {
         height: 125px;
         width: 60px;
         border-radius: 3px;
-        /* transition: .2s linear; */
     }
 
     .header-navbar ul {
@@ -682,11 +682,6 @@ textarea {
         display: block;
     }
 
-    .header-navbar a:hover,
-    a:active {
-        background-color: #b3b2ae;
-    }
-
     li.spacer {
         display: none;
     }
@@ -695,16 +690,6 @@ textarea {
 @media(max-width:576px) {
     h1 {
         font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    h3,
-    dt,
-    h4 {
-        font-size: .75rem;
     }
 
     .text-card {
@@ -741,6 +726,12 @@ textarea {
     .resume-experience-container {
         flex-direction: column;
 
+    }
+}
+
+@media (max-width:500px) {
+    #projects-grid-container {
+        grid-template-columns: 1fr;
     }
 }
 

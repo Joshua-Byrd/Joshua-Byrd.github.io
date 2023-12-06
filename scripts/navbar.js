@@ -6,6 +6,7 @@ const bars = document.querySelector(".fa-bars");
 navbar.addEventListener("click", () => {
     //apply open class to the navbar, lis, X, and bars
     navbar.classList.toggle("open");
+    // navbar.style.height = "${navbar.scrollHeight}px";
     for(li of navbarLis) {
         li.classList.toggle("open");
     }

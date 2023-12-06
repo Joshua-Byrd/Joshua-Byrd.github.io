@@ -1,3 +1,4 @@
+/**Joke section content is hidden by default in case JavaScript is disabled. This reveals it all if JavaScript is present. */
 window.addEventListener("load", () => {
     const jokeSection = document.querySelector("#joke-section");
     jokeSection.style.display = "flex";

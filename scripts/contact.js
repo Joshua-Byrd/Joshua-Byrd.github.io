@@ -1,3 +1,4 @@
+/**All form content is hidden by default in case JavaScript is disabled. This reveals it all if JavaScript is present. */
 window.addEventListener("load", () => {
     const form = document.querySelector("#contact-form");
     form.style.display = "block";
