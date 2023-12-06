@@ -54,8 +54,8 @@
             </noscript>
             <main id="vue-projects-main" v-cloak>
 
-                <div id="projects-grid-container">
-                    <div v-for="p in projects" :key="p.id"
+                <section id="projects-grid-container">
+                    <article v-for="p in projects" :key="p.id"
                         class="project-grid-item">
                         <h2>
                             {{ p.heading }}
@@ -68,8 +68,8 @@
                                 :alt="p.alt">
                         </div>
                         <p>{{ p.description }}</p>
-                    </div>
-                </div>
+                    </article>
+                </section>
             </main>
             <footer>&copy; 2023 Joshua Byrd</footer>
         </div>

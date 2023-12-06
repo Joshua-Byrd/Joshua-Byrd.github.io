@@ -17,6 +17,8 @@ accordionContent.forEach((item, index) => {
 
         let description = item.querySelector(".description");
         if (item.classList.contains("open")) {
+            //scroll height is the height of all child elements including
+            //hidden ones
             description.style.height = `${description.scrollHeight}px`;
             item.querySelector("i").classList.replace("fa-plus","fa-minus");
         } else {
