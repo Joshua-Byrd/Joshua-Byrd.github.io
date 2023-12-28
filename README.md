@@ -1,15 +1,7 @@
-# CS601 Term Project 
-## Joshua Byrd
+# Purpose
 
-The goal of this project was to create a strong portfolio website that both adhered to the requirements of the final project of CS601 and showcased my skills and education to potential employers. 
+This porfolio site was my term project for CS601 at Boston University's Metropolitan College. It consists primarily of HTML, CSS and vanilla JavaScript, although Vue.js was used to create the projects page, as that was a requirement for the project. I wanted to be able to use this as a real portfolio, so the bio and resume pages are true and accurate, and that project page contains links to real projects I have worked on. Additionally, the contact page links to my real LinkedIn and Github pages, and the form can be used to contact me directly.
 
-My site currently has seven pages: 
-1. A landing page featuring reveal-on-scroll links to the rest of the site. 
-2. A page consisting of my current resumt in HTML.
-3. A projects page built in Vue.js with links to several of my academic projects on Github.
-4. A blog that features accordion style revealing/hiding posts.
-5. A gallery of images.
-6. An 'About Me' page detailing my personl bio.
-7. A contact page with a contact form and links to my Github and LinkedIn accounts. 
+# Site
 
-My website utilizes flexbox or grid on every page to be completely responsive, and works well on screen sizes from mobile to extra large desktop monitors. JavaScript is utilized throughout to create attractive and interesting features, and readability and usability have been taken into account in all aspects of it.  I'm proud of this site and the work that went into it, and I believe that it demonstrates a strong working knowledge of HTML5, CSS3, and ES6 and beyond JavaScript. 
+The website is hosted on Github pages, and can be accessed here: https://joshua-byrd.github.io/
