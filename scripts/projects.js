@@ -8,12 +8,12 @@ const app = Vue.createApp({
       projects: [
         {
           id: projectCount++,
-          heading: "Personal Portfolio Website",
-          github: "https://joshua-byrd.github.io/",
+          heading: "Desolate Depths",
+          github: "https://github.com/Joshua-Byrd/DesolateDepths",
           description:
-            "This portfolio website (the site you are currently viewing) was created for the term project for CS601 at Boston University. It consists primarily of HTML, CSS, and vanilla JavaScript, although per the requirements of the project, the current page was built using Vue.js. Full source code can be found at the Github link above.",
-          logo: "./images/icons/javascript.svg",
-          alt: "The PostgresQL logo.",
+            "Desolate Depths is a text-based adventure game in the style of Zork and Curses. Per the genre norm, the player is presented with a description of their current location and can enter commands such as 'go north', 'get shortsword', or 'consume health potion' to interact with the environment. Additionally, the game generates random encounters with monsters that the player is able to engage in combat with, possibly earning gold or items.",
+          logo: "./images/icons/java-icon.svg",
+          alt: "The Java logo",
         },
         {
           id: projectCount++,
@@ -26,41 +26,22 @@ const app = Vue.createApp({
         },
         {
           id: projectCount++,
-          heading: "MVC App in Java",
-          github: "https://github.com/Joshua-Byrd/GroupProject",
+          heading: "GoodReads Imitation",
+          github: "https://github.com/Joshua-Byrd/GoodReadsImitation",
           description:
-            "This was a group project, completed with another student, as the final project of CIT594 at The University of Pennsylvania, It utilizes a rudimentary MVC pattern where the model accepts either a JSON or CSV file of tabular data and parses it into various data structures, while the view provides the user with a CLI menu consisting of multiple data analysis functions. The controller of course acts as the go-between for the model and view and provides validation for incoming files before passing them to the model.",
-          logo: "./images/icons/java-icon.svg",
-          alt: "The Java logo.",
+            "This web server, built with Node/Express/Mongo.db, recreates some of the basic functionality of GoodReads.com, the popular book logging and review website. A user can search for books (by author, title, or ISBN) and add them to their read or want-to-read list, and view and edit their own profile. An administrator can view and search for both users or books, as well as add, edit, or delete users or books.",
+          logo: "./images/icons/javascript.svg",
+          alt: "The JavaScript logo.",
         },
         {
           id: projectCount++,
-          heading: "Data Analysis in Python",
+          heading: "Nutrition Tracker",
           github:
-            "https://github.com/Joshua-Byrd/Exit_Surveys_Analysis/blob/master/Exit_Surveys_Analysis.ipynb",
+            "https://github.com/Joshua-Byrd/NutritionTracker",
           description:
-            " In this project, I analyzed two datasets using Python and Pandas in Jupyter Notebook. Both datasets contained data from employee exit surveys, and the project consisted of cleaning the data to deal with null values and odd entries followed by basic analysis to determine why employees left their positions, if it differed between short- and long-term employees, and how much of a role job dissatisfaction played in their leaving.",
-          logo: "./images/icons/python-icon.svg",
-          alt: "The Python logo.",
-        },
-        {
-          id: projectCount++,
-          heading: "FSM CSV Parser",
-          github:
-            "https://github.com/Joshua-Byrd/CIT594-Module7-Programming-Assignment",
-          description:
-            "A CSV parser built in Java using a finite state machine, completed as part of the curriculum of CIT594 at the University of Pennsylvania.",
-          logo: "./images/icons/java-icon.svg",
-          alt: "The java logo.",
-        },
-        {
-          id: projectCount++,
-          heading: "Pool Maintenance Program",
-          github: "https://github.com/Joshua-Byrd/PMP",
-          description:
-            "A simple CLI Python app for pool operators, PMP prompts the user for their chemical test readings,then calculates and prints the water's saturation index and what (if any) chemicals and how much to be added. Also provides options to export daily results to a csv file.",
-          logo: "./images/icons/python-icon.svg",
-          alt: "The Python logo.",
+            "This Android application, written in Kotlin, allows users to track their daily nutritional intake. A user is able to search a database of food items and add them to their current day, and the app displays a list of all foods eaten as well as a summary of their nutritional content",
+          logo: "./images/icons/Kotlin_Icon.svg",
+          alt: "The Kotlin logo.",
         },
       ],
     };
