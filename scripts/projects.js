@@ -26,7 +26,7 @@ const app = Vue.createApp({
         },
         {
           id: projectCount++,
-          heading: "GoodReads Imitation",
+          heading: "GoodReads Lite",
           github: "https://github.com/Joshua-Byrd/GoodReadsImitation",
           description:
             "This web server, built with Node/Express/Mongo.db, recreates some of the basic functionality of GoodReads.com, the popular book logging and review website. A user can search for books (by author, title, or ISBN) and add them to their read or want-to-read list, and view and edit their own profile. An administrator can view and search for both users or books, as well as add, edit, or delete users or books.",
