@@ -80,6 +80,11 @@ h3 {
     letter-spacing: 0.2em;
 }
 
+blockquote {
+    font-size: 2em;
+    background-color: rgb(32, 30, 26, 0.96);
+}
+
 /* Main Navbar and links----------------------------------------------------- */
 a:link {
     text-decoration: none;
