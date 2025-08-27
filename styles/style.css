@@ -21,6 +21,16 @@ Bebas Nueue
 
 
 /* General Styles-----------------------------------------------------------*/
+/* Start with text hidden */
+body {
+  visibility: hidden;
+}
+
+/* When fonts are ready, show it */
+body.fonts-loaded {
+  visibility: visible;
+}
+
 
 body {
     background-image: url(../images/keyboard.jpg);
