@@ -32,8 +32,6 @@
                         <li class="spacer">\</li>
                         <li class="menu-item"><a href="projects.html">Projects</a></li>
                         <li class="spacer">\</li>
-                        <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                        <li class="spacer">\</li>
                         <li class="menu-item"><a href="about.html">About</a></li>
                         <li class="spacer">\</li>
                         <li class="menu-item"><a href="contact.html">Contact</a></li>
@@ -49,24 +47,17 @@
                     <h2 class="resume-headings">Summary</h2>
                     <hr class="resume-hr">
                     <p>
-                        Highly motivated aspiring software
-                        engineer pursuing a Master of Science in Software
-                        Development. Dedicated and resourceful, I have
-                        successfully managed a dynamic range
-                        of responsibilities while completing my degree,
-                        including concurrently caring for my son during
-                        his battle with leukemia.
-
-                        My academic coursework has provided me with a
-                        comprehensive understanding of software engineering
-                        principles and proficiency in JavaScript,
-                        HTML/CSS, Java, Python, and SQL. Eager to apply my
-                        theoretical knowledge in a
-                        practical setting, I am seeking an internship
-                        opportunity to gain hands-on experience in the field,
-                        and I am committed to leveraging my unique blend of life
-                        experiences and academic achievements to contribute
-                        effectively to a great software engineering team.
+                        MS in Software Development (Boston University, 4.0 GPA) with a 
+                        strong foundation in software engineering and data analytics. 
+                        Skilled in Python, SQL, Java, and JavaScript, with hands-on 
+                        experience across database design, analytics tools (Excel, Power BI), 
+                        and full-stack development. Particular interest in data-driven 
+                        problem solving, but open to roles in software development, 
+                        data analytics, or database administration.
+                    </p>
+                    <p>
+                        <em>Download a PDF version of this resume 
+                        <a href="/res/Joshua_Byrd_Resume.pdf" download><strong>here</strong>.</a></em>
                     </p>
                 </section>
                 <section id="resume-education">
@@ -75,10 +66,8 @@
                     <dl>
                         <dt>Boston University</dt>
                         <dd>
-                            Master of Science in Software Development, 2023 -
-                            present<br>
-                            Current GPA 4.0 <br>
-                            Projected graduation: December, 2024.
+                            Master of Science in Software Development, 2023 - 2025<br>
+                            Graduated with 4.0 GPA.<br>                            
                         </dd>
                         <dt>University of Pennsylvania</dt>
                         <dd>
@@ -100,37 +89,25 @@
                         <hr class="resume-hr">
                         <div id="resume-skills-container">
                             <div>
-                                <h3>Primary Skills</h3>
+                                <h3>Core Skills</h3>
 
                                 <ul>
+                                    <li>SQL - PostgreSQL/MySQL/SQLite</li>
+                                    <li>Python - Numpy/Pandas/Jupyter Notebook</li>
                                     <li>Java</li>
-                                    <li>SQL (PostgreSQL, MySQL, SQLite)</li>
                                     <li>JavaScript</li>
                                     <li>HTML/CSS</li>
-                                    <li>Node.js</li>
-                                    <li>REST</li>
-                                    <li>MongoDB</li>
-                                    <li>Python</li>
+                                    <li>Excel</li>
+                                    <li>Power BI</li>
                                 </ul>
                             </div>
                             <div>
-                                <h3>Ancillary Skills</h3>
+                                <h3>Broader Competencies</h3>
                                 <ul>
-                                    <li>Database Design</li>
-                                    <li>BASH/Command Line</li>
+                                    <li>Database Design & Normalization</li>
+                                    <li>Software Design Patterns</li>
+                                    <li>BASH/Linux Command Line</li>
                                     <li>Git</li>
-                                    <li>Pandas and Jupyter Notebook</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>General Abilities</h3>
-                                <ul>
-                                    <li>Excellent problem-solving abilities</li>
-                                    <li>Learns new technologies and frameworks
-                                        quickly</li>
-                                    <li>Comfortable working independently or as
-                                        part
-                                        of a team</li>
                                 </ul>
                             </div>
                         </div>
@@ -141,40 +118,68 @@
                         <div id="resume-projects-container">
                             <div>
                                 <h3>Desolate Depths</h3>
-                                <img src="./images/icons/java-icon.svg"
+                                <!-- <img src="./images/icons/java-icon.svg"
                                     alt="The Java logo."
-                                    class="resume-project-java-logo">
+                                    class="resume-project-java-logo"> -->
                                 <p>
-                                    A text adventure game written in Java where players explore a 
-                                    dungeon, fighting monsters and collecting loot.
+                                    Designed and implemented a Java-based text 
+                                    adventure game featuring SQLite persistence, 
+                                    multithreading, and file I/O. Employed 
+                                    object-oriented design patterns to manage 
+                                    combat, inventory, and exploration systems 
+                                    across a dynamically generated dungeon.
                                 </p>
-
                             </div>
                             <div>
+                                <h3>Fitness Database</h3>
+                                <!-- <img src="./images/icons/postgresql-icon.svg"
+                                    alt="The PostGresQL logo"
+                                    class="resume-projects-postgresql-logo"> -->
+                                <p>
+                                    Engineered a PostgreSQL database schema for 
+                                    a fitness and nutrition platform, complete 
+                                    with stored procedures, triggers, and test 
+                                    datasets. Focused on data normalization, 
+                                    referential integrity, and real-world scalability 
+                                    in a backend-focused project.
+                                </p>
+                            </div>
+                            <div>
+                                <h3>The Agora</h3>
+                                <p>
+                                    Developed an Angular-based news aggregator 
+                                    that integrates with the NewsAPI to fetch live 
+                                    headlines and organize them into a Kanban-style 
+                                    board with drag-and-drop functionality. Implemented 
+                                    local storage caching to optimize API usage and ensure 
+                                    smooth, interactive user experiences.
+                                </p>
+                            </div>
+                            <!-- <div>
                                 <h3>Goodreads Lite</h3>
                                 <img src="./images/icons/javascript.svg"
                                     alt="The JavaScript logo."
                                     class="resume-project-java-logo">
                                 <p>
-                                    A web server using Node/Express/Mongo.db that recreates
-                                    some of the basic functionality of Goodreads.com.
+                                    Developed a full-stack web application with Node.js, 
+                                    Express, and MongoDB, replicating core Goodreads 
+                                    functionality such as book reviews and user management. 
+                                    Showcased skills in RESTful API design, database 
+                                    schema modeling, and server-side logic.
                                 </p>
-                            </div>
+                            </div> -->
                             <div>
                                 <h3>Nutrition Tracker</h3>
-                                <img src="./images/icons/Kotlin_Icon.svg"
+                                <!-- <img src="./images/icons/Kotlin_Icon.svg"
                                     alt="The Kotlin logo."
-                                    class="resume-projects-python-logo">
-                                <p>An Android app written in Kotlin that allows users to
-                                    track their daily nutritional intake.</p>
-                            </div>
-                            <div>
-                                <h3>Fitness Database</h3>
-                                <img src="./images/icons/postgresql-icon.svg"
-                                    alt="The PostGresQL logo"
-                                    class="resume-projects-postgresql-logo">
+                                    class="resume-projects-python-logo"> -->
                                 <p>
-                                    A PostGresQL database for a fitness and nutrition app.
+                                    Built an Android app in Kotlin using 
+                                    Jetpack Compose and SQLite to allow users 
+                                    to log daily food intake, track macro/micronutrients, 
+                                    and visualize progress. Showcased mobile 
+                                    development skills with an emphasis on 
+                                    data persistence and UI/UX design.
                                 </p>
                             </div>
                         </div>
@@ -182,27 +187,23 @@
                     <section id="resume-experience">
                         <h2 class="resume-headings">Experience</h2>
                         <hr class="resume-hr">
-                        <h3>Care for sick child, 2020 - Present</h3>
+                        <h3>Caregiver & Graduate Student, 2020 - 2025</h3>
                         <div class="resume-experience-container">
                             <div class="resume-experience-div">
                                 <ul>
-                                    <li>Managed all oncology and other
-                                        appointments as part of multi-year
-                                        leukemia treatment.</li>
-                                    <li>Administered all daily medications and
-                                        injections.</li>
-                                    <li>Managed all household duties, such as
-                                        cooking, cleaning, care and homework for
-                                        other children.</li>
+                                    <li>Primary caregiver for my son during multi-year leukemia treatment, 
+                                        managing all medical appointments, medications, and 
+                                        household responsibilities.</li>
+                                    <li>Demonstrated resilience, time-management, 
+                                        and commitment by balancing full academic workload 
+                                        with intensive caregiving responsibilities.</li>
                                 </ul>
                             </div>
                             <div class="resume-experience-div">
                                 <ul>
-                                    <li><strong>Pursued master's degree
-                                            part-time,
-                                            maintaining a 3.72 GPA in an Ivy
-                                            League
-                                            computer science program.</strong></li>
+                                    <li>Simultaneously completed graduate studies, 
+                                        earning an MS in Software Development from 
+                                        Boston University (4.0 GPA).</li>
                                 </ul>
                             </div>
                         </div>
@@ -328,7 +329,7 @@
                         </div>
                     </section>
                 </main>
-                <footer>&copy; 2023 Joshua Byrd</footer>
+                <footer>&copy; 2025 Joshua Byrd</footer>
             </div>
             <script src="./scripts/navbar.js"></script>
         </body>
