@@ -3,7 +3,7 @@ export default function ProjectsGrid() {
   const projects = [
     {
       title: "Enterprise Data Warehouse",
-      description: "Building and maintaining a 1,000+ model dbt and BigQuery warehouse for a digital health company. Includes client data onboarding and pipeline optimization.",
+      description: "Maintaining a 1,000+ model dbt and BigQuery warehouse for a digital health company. Includes client data onboarding and pipeline optimization.",
       tech: ["dbt", "BigQuery", "Airflow", "Python"],
       link: "#"
     },
