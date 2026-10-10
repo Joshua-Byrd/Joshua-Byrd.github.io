@@ -1,29 +1,39 @@
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './index.css';
-import Hero from './components/Hero';
-import ProjectsGrid from './components/ProjectsGrid';
-import Timeline from './components/Timeline'; 
+import Home from './pages/Home';
+
+// Temporary placeholder components so our routes have somewhere to go
+function About() { return <section style={{marginTop: '4rem'}}><h2>My Journey</h2><p>About page coming soon...</p></section>; }
+function Resume() { return <section style={{marginTop: '4rem'}}><h2>Resume</h2><p>Resume page coming soon...</p></section>; }
+function Blog() { return <section style={{marginTop: '4rem'}}><h2>Blog</h2><p>Blog coming soon...</p></section>; }
 
 function App() {
   return (
-    <div className="app-container">
-      <header>
-        <nav className="site-nav">
-          <h1 className="site-logo">JB</h1>
-          <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-          </ul>
-        </nav>
-      </header>
+    <Router>
+      <div className="app-container">
+        <header>
+          <nav className="site-nav">
+            <Link to="/" className="site-logo">JB.</Link>
+            <ul className="nav-links">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/resume">Resume</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
+            </ul>
+          </nav>
+        </header>
 
-      <main>
-        <Hero />
-        <ProjectsGrid />
-        <Timeline />
-      </main>
-    </div>
+        <main>
+          {/* This is where the URL dictates what component renders */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 

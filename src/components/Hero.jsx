@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section className="hero-section">
@@ -12,9 +14,9 @@ export default function Hero() {
         <p className="hero-journey-text">
           <strong>My Journey:</strong> From facilities maintenance to building complex data architectures. I bring a non-traditional background rooted in resilience, systems thinking, and a relentless drive to master new technologies.
         </p>
-        <a href="#about" className="hero-journey-link">
+        <Link to="/about" className="hero-journey-link">
           Read more about my transition &rarr;
-        </a>
+        </Link>
       </div>
     </section>
   );
