@@ -11,7 +11,7 @@ export default function About() {
             stakeholders across my company. And I <i>love</i> it.  I really do.
             I consider myself so lucky to get to do this, because it wasn't always
             this way. In fact, my path into data and development has been the most 
-            convoluted and meandering journey, you can imagine.  Let me tell you
+            convoluted and meandering journey you can imagine.  Let me tell you
             about it...
         </p>
         <p>  

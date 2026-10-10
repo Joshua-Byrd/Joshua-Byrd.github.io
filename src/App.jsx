@@ -2,10 +2,9 @@ import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
+import Resume from './pages/Resume';
+import Blog from './pages/Blog';
 
-// Temporary placeholder components so our routes have somewhere to go
-function Resume() { return <section style={{marginTop: '4rem'}}><h2>Resume</h2><p>Resume page coming soon...</p></section>; }
-function Blog() { return <section style={{marginTop: '4rem'}}><h2>Blog</h2><p>Blog coming soon...</p></section>; }
 
 function App() {
   return (
