@@ -4,7 +4,7 @@ export default function Timeline() {
       role: "Data Engineer",
       company: "Cylinder Health",
       date: "Mar 2026 – Present",
-      description: "Building and maintaining a 1,000+ model dbt / BigQuery warehouse. Onboarded 5 new employer clients end-to-end, standardized event models, and resolved complex data contamination and production pipeline failures."
+      description: "Maintaining a 1,000+ model dbt / BigQuery warehouse. Onboarded 5 new employer clients end-to-end, standardized event models, and resolved complex data contamination and production pipeline failures."
     },
     {
       role: "Caregiver & Graduate Student",
@@ -16,7 +16,7 @@ export default function Timeline() {
       role: "Maintenance Technician",
       company: "Daly Hotel Management / Hilltop Center Nursing Home",
       date: "2016 – 2020",
-      description: "Served as interim maintenance director, managing preventive maintenance and daily work requests. Successfully refurbished 80+ rooms in a six-month period."
+      description: "Managed preventive maintenance and daily work requests. Successfully refurbished 80+ rooms in a six-month period."
     },
     {
       role: "Maintenance Technician II",
