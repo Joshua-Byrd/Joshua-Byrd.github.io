@@ -82,8 +82,26 @@ export default function About() {
             space - a junior data engineer at a healthcare startup. It was, without
             a doubt, one of the scariest things I've ever done. I trembled before
             every interview, talked through SQL problems with a quaver in my voice,
-            and felt so out of place that I considering quitting a thousand times
-            in the first month.
+            and felt so out of place when I finally started that I considering quitting.
+        </p>
+        <p>
+            Thankfully, I didn't do that. Despite the self-doubt and the deluge of
+            new information to take in, I continued, trying to see every mistake
+            and misstep as a learning opportunity. And I <i>have</i> learned so 
+            much - Docker and dbt, Airflow tasks and DAGs, BigQuery and GCS, and 
+            the many, <i>many</i> nuances of the world of healthcare. It's been 
+            hard, but also one of the most exciting times of my life, and I 
+            consider myself so fortunate to have landed where I did, with a team 
+            that has been so welcoming and patient. 
+        </p>
+        <p>
+            Now, several months in, I've settled in a bit, routinely handling 
+            bugfixes in the data warehouse, requests from the billing and marketing
+            departments, building and updating models or DAGs, and even occasionally
+            doing some small ad hoc analysis requests. Even though I know that
+            I've just begun in this world, I've started to develop the confidence
+            to believe that I can tackle whatever new challenges await, and I am
+            so eager to see what happens next.
         </p>
         
       </div>

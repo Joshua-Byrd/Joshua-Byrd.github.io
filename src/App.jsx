@@ -12,7 +12,7 @@ function App() {
       <div className="app-container">
         <header>
           <nav className="site-nav">
-            <Link to="/" className="site-logo">JB.</Link>
+            <Link to="/" className="site-logo"></Link>
             <ul className="nav-links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About</Link></li>

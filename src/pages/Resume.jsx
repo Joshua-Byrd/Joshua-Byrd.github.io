@@ -7,7 +7,7 @@ export default function Resume() {
       bullets: [
         "Routinely onboards new clients end-to-end across multiple pipelines: eligibility and claims ingestion, demographic feeds, and reporting/billing setup.",
         "Implemented dbt-osmosis, populating YAML configuration files across the entire data warehouse",
-        "Standardized numerous silver-layer event models onto one shared event-grain contract (naming, timestamps, latest-record flags, null guards) and updated downstream aggregates.",
+        "Standardized numerous silver-layer event models onto one shared contract (naming, timestamps, latest-record flags, null guards) and updated downstream models.",
         "Discovered and fixed a bug within the claims ingestion causing members to be billed to the wrong client.",
         "Routinely analyzes and fixes failures within the data warehouse update Airflow DAG.",
         "Built targeting models for monthly email and direct-mail campaigns for one of the largest clients.",

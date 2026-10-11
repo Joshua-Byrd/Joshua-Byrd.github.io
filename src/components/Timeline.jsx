@@ -4,7 +4,7 @@ export default function Timeline() {
       role: "Data Engineer",
       company: "Cylinder Health",
       date: "Mar 2026 – Present",
-      description: "Maintaining a 1,000+ model dbt / BigQuery warehouse. Onboarded 5 new employer clients end-to-end, standardized event models, and resolved complex data contamination and production pipeline failures."
+      description: "Maintains a 1,000+ model dbt / BigQuery warehouse. Onboards new  clients end-to-end, standardizes event models, and resolves complex data contamination and production pipeline failures."
     },
     {
       role: "Caregiver & Graduate Student",

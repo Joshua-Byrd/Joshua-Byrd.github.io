@@ -2,12 +2,6 @@ export default function ProjectsGrid() {
   // Storing projects in an array makes it easy to add or edit them later
   const projects = [
     {
-      title: "Enterprise Data Warehouse",
-      description: "Maintaining a 1,000+ model dbt and BigQuery warehouse for a digital health company. Includes client data onboarding and pipeline optimization.",
-      tech: ["dbt", "BigQuery", "Airflow", "Python"],
-      link: "#"
-    },
-    {
       title: "Fitness App Database",
       description: "Designed a normalized PostgreSQL schema for workouts and nutrition tracking. Implemented stored procedures and triggers for data integrity.",
       tech: ["PostgreSQL", "SQL", "Database Design"],
@@ -17,6 +11,12 @@ export default function ProjectsGrid() {
       title: "Headline Analysis Pipeline",
       description: "Python application utilizing NewsAPI to aggregate and analyze headlines, evaluating relationships between media bias, reliability, and sentiment.",
       tech: ["Python", "Pandas", "NewsAPI"],
+      link: "#"
+    },
+    {
+      title: "Desolate Depths",
+      description: "Java-based text adventure inspired by classics like Zork. Players explore a dungeon, fight monsters, and collect loot.",
+      tech: ["Java", "SQLite", "Multithreading", "OOP"],
       link: "#"
     }
   ];
