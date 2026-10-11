@@ -68,7 +68,7 @@ export default function Resume() {
       <div className="resume-section">
         <h3>Summary</h3>
         <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', maxWidth: '800px' }}>
-          Data engineer maintaining a 1,000+ model dbt / BigQuery warehouse for a digital health company. I handle client data onboarding, data quality, and root-causing production incidents. MS in Software Development (Boston University, 4.0) with a non-traditional background rooted in operational resilience and systems thinking.
+          Data engineer maintaining a 1,000+ model dbt / BigQuery warehouse for a digital health company. I handle client data onboarding, data quality, and warehouse-breaking production incidents. MS in Software Development (Boston University, 4.0) with a non-traditional background rooted in operational resilience and systems thinking.
         </p>
       </div>
 
